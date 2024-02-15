@@ -33,7 +33,7 @@
 		CC77CF002B7DCB1C007B4CB5 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CC77CEFF2B7DCB1C007B4CB5 /* FirebaseAnalyticsSwift */; };
 		CC77CF022B7DCB1C007B4CB5 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = CC77CF012B7DCB1C007B4CB5 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		CC77CF042B7DCB1C007B4CB5 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = CC77CF032B7DCB1C007B4CB5 /* FirebaseAppCheck */; };
-		CC77CF062B7DCBED007B4CB5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC77CF052B7DCBED007B4CB5 /* GoogleService-Info.plist */; };
+		CC77CF0C2B7DE813007B4CB5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC77CF0B2B7DE813007B4CB5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +59,7 @@
 		CC77CEF42B7DC9C8007B4CB5 /* TaskCalenderViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCalenderViewViewModel.swift; sourceTree = "<group>"; };
 		CC77CEF62B7DC9D7007B4CB5 /* TaskListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListItemViewViewModel.swift; sourceTree = "<group>"; };
 		CC77CEF82B7DC9EA007B4CB5 /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
-		CC77CF052B7DCBED007B4CB5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CC77CF0B2B7DE813007B4CB5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				CC77CEC62B7DBC93007B4CB5 /* BokuTasksApp.swift */,
-				CC77CF052B7DCBED007B4CB5 /* GoogleService-Info.plist */,
+				CC77CF0B2B7DE813007B4CB5 /* GoogleService-Info.plist */,
 				CC77CECA2B7DBC95007B4CB5 /* Assets.xcassets */,
 			);
 			path = Support;
@@ -233,7 +233,7 @@
 			files = (
 				CC77CECE2B7DBC95007B4CB5 /* Preview Assets.xcassets in Resources */,
 				CC77CECB2B7DBC95007B4CB5 /* Assets.xcassets in Resources */,
-				CC77CF062B7DCBED007B4CB5 /* GoogleService-Info.plist in Resources */,
+				CC77CF0C2B7DE813007B4CB5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

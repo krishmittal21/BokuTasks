@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyCoZFkd3Zlc0_83lYWnOLeoDv2ZjNnzIcI</string>
+	<string>AIzaSyDjQRk74xOZdD5Clh0FpkwnuTQEyL94o2w</string>
 	<key>GCM_SENDER_ID</key>
-	<string>555299407594</string>
+	<string>294901351606</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>krishmittal.BokuTasks</string>
 	<key>PROJECT_ID</key>
-	<string>bokutasks</string>
+	<string>bokutasks-814d9</string>
 	<key>STORAGE_BUCKET</key>
-	<string>bokutasks.appspot.com</string>
+	<string>bokutasks-814d9.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:555299407594:ios:ed180033c6664a8d303993</string>
+	<string>1:294901351606:ios:9fe88f1b8f43bc3ddb1217</string>
 </dict>
 </plist>
