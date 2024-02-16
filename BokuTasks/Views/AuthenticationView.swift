@@ -9,32 +9,34 @@ import SwiftUI
 
 struct AuthenticationView: View {
     var body: some View {
-        VStack(){
-            Image("logo-transparent")
-                .resizable()
-                .frame(width: 450, height: 450)
-            
-            VStack{
-                Text("Your ")
-                        .font(.system(size: 35, weight: .medium, design: .rounded))
-                +
-                Text("Everyday Task ")
-                        .font(.system(size: 35, weight: .medium, design: .rounded))
-                        .foregroundColor(Color.newPrimary)
+        NavigationView{
+            VStack(){
+                Image("logo-transparent")
+                    .resizable()
+                    .frame(width: 450, height: 450)
                 
-                Text("Management App")
-                        .font(.system(size: 35, weight: .medium, design: .rounded))
+                VStack{
+                    Text("Your ")
+                            .font(.system(size: 35, weight: .medium, design: .rounded))
+                    +
+                    Text("Everyday Task ")
+                            .font(.system(size: 35, weight: .medium, design: .rounded))
+                            .foregroundColor(Color.newPrimary)
+                    
+                    Text("Management App")
+                            .font(.system(size: 35, weight: .medium, design: .rounded))
+                }
+                .padding(.bottom, 20)
+                
+                HStack{
+                    BTAuthButton(title: "SignUp", background: Color.newPrimary, textColor: Color.white, destination: RegisterView())
+                    
+                    Spacer()
+                    
+                    BTAuthButton(title: "LogIn", background: Color.white, textColor: Color.black, destination: LoginView())
+                }
+                .padding(40)
             }
-            .padding(.bottom, 20)
-            
-            HStack{
-                BTAuthButton(title: "SignUp", background: Color.newPrimary, textColor: Color.white, destination: RegisterView())
-                
-                Spacer()
-                
-                BTAuthButton(title: "LogIn", background: Color.white, textColor: Color.black, destination: LoginView())
-            }
-            .padding(40)
         }
         
     }
