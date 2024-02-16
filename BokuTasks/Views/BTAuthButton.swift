@@ -7,16 +7,13 @@
 
 import SwiftUI
 
-struct BTAuthButton: View {
+struct BTAuthButton<Destination: View>: View {
     let title: String
     let background: Color
     let textColor: Color
-    let action: () -> Void
-    
+    let destination: Destination
     var body: some View {
-        Button {
-            action()
-        } label: {
+        NavigationLink(destination: destination) {
             ZStack{
                 RoundedRectangle(cornerRadius: 15)
                     .foregroundStyle(background)
@@ -29,8 +26,8 @@ struct BTAuthButton: View {
                     .foregroundStyle(textColor)
                     .bold()
                     .font(.system(size: 20))
-                    
             }
         }
     }
 }
+

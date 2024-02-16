@@ -13,6 +13,7 @@ struct AuthenticationView: View {
             Image("logo-transparent")
                 .resizable()
                 .frame(width: 450, height: 450)
+            
             VStack{
                 Text("Your ")
                         .font(.system(size: 35, weight: .medium, design: .rounded))
@@ -25,12 +26,13 @@ struct AuthenticationView: View {
                         .font(.system(size: 35, weight: .medium, design: .rounded))
             }
             .padding(.bottom, 20)
+            
             HStack{
-                BTAuthButton(title: "SignUp", background: Color.newPrimary, textColor: Color.white) {
-                }
+                BTAuthButton(title: "SignUp", background: Color.newPrimary, textColor: Color.white, destination: RegisterView())
+                
                 Spacer()
-                BTAuthButton(title: "LogIn", background: Color.white, textColor: Color.black) {
-                }
+                
+                BTAuthButton(title: "LogIn", background: Color.white, textColor: Color.black, destination: LoginView())
             }
             .padding(40)
         }
