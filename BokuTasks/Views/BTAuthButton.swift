@@ -28,6 +28,9 @@ struct BTAuthButton<Destination: View>: View {
                     .font(.system(size: 20))
             }
         }
+        .navigationTitle("")
+        .navigationBarBackButtonHidden(true)
+        
     }
 }
 

@@ -11,22 +11,28 @@ struct AuthenticationView: View {
     var body: some View {
         NavigationView{
             VStack(){
+                
                 Image("logo-transparent")
                     .resizable()
                     .frame(width: 450, height: 450)
-                
+                /* To Change The Logo
+                Text("Boku Tasks")
+                    .font(.system(size: 40, weight: .medium, design: .rounded))
+                    .foregroundStyle(Color.newPrimary)
+                    .padding(.bottom, 20)
+                */
                 VStack{
                     Text("Your ")
                             .font(.system(size: 35, weight: .medium, design: .rounded))
                     +
                     Text("Everyday Task ")
                             .font(.system(size: 35, weight: .medium, design: .rounded))
-                            .foregroundColor(Color.newPrimary)
+                            .foregroundStyle(Color.newPrimary)
                     
                     Text("Management App")
                             .font(.system(size: 35, weight: .medium, design: .rounded))
                 }
-                .padding(.bottom, 20)
+                .padding(.bottom, 30)
                 
                 HStack{
                     BTAuthButton(title: "SignUp", background: Color.newPrimary, textColor: Color.white, destination: RegisterView())
@@ -38,6 +44,7 @@ struct AuthenticationView: View {
                 .padding(40)
             }
         }
+        .accentColor(.gray)
         
     }
 }

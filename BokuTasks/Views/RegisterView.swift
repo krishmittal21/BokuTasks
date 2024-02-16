@@ -9,7 +9,11 @@ import SwiftUI
 
 struct RegisterView: View {
     var body: some View {
-        Text("SignUp")
+        Text("Sign Up")
+            .font(.system(size: 35, weight: .medium, design: .rounded))
+            .padding(.top, 50)
+            .ignoresSafeArea()
+        Spacer()
     }
 }
 
