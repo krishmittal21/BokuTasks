@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
-
+import FirebaseCore
 @main
 struct BokuTasksApp: App {
+    init(){
+        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
             MainView()
