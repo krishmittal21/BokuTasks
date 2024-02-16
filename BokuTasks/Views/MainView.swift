@@ -10,7 +10,11 @@ import SwiftUI
 struct MainView: View {
     @StateObject var viewModel = MainViewViewModel()
     var body: some View {
-        AuthenticationView()
+        if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
+            TaskListView()
+        } else {
+            AuthenticationView()
+        }
     }
 }
 
