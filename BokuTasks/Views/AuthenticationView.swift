@@ -36,6 +36,7 @@ struct AuthenticationView: View {
                 
                 HStack{
                     BTAuthButton(title: "SignUp", background: Color.newPrimary, textColor: Color.white, destination: RegisterView())
+                        
                     
                     Spacer()
                     

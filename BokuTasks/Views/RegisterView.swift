@@ -13,40 +13,135 @@ struct RegisterView: View {
         VStack{
             Text("Sign Up")
                 .font(.system(size: 35, weight: .medium, design: .rounded))
-                .foregroundStyle(Color.gray)
-                .padding(.top, 50)
+                .padding(.top,50)
                 .ignoresSafeArea()
             Spacer()
-            Form {
-                TextField("Full Name", text: $viewModel.name)
-                    .textFieldStyle(DefaultTextFieldStyle())
-                    .autocorrectionDisabled()
-                TextField("Email", text: $viewModel.email)
-                    .textFieldStyle(DefaultTextFieldStyle())
-                    .autocorrectionDisabled()
-                SecureField("Password", text: $viewModel.password)
-                    .textFieldStyle(DefaultTextFieldStyle())
-                    .autocorrectionDisabled()
+            VStack{
+                Text("Complete Your Profile")
+                    .font(.system(size: 25, weight: .medium, design: .rounded))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading, 27)
+                Text("Don't worry only you can see your personal info, no one else will be able to see it")
+                    .frame(width: 350)
+                    .font(.system(size: 15))
+                    .foregroundStyle(Color.gray)
+                    //.padding(.top, 3)
             }
+            Spacer()
+            
+            Form {
+                Section{
+                    HStack{
+                        Image(systemName: "person")
+                            .foregroundStyle(Color.gray)
+                            .padding(.leading, 8)
+                        TextField("Full Name", text: $viewModel.name)
+                            .textFieldStyle(DefaultTextFieldStyle())
+                            .autocorrectionDisabled()
+                            .frame(height: 50)
+                    }
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 5)
+                            .stroke(Color.gray, lineWidth: 1)
+                            
+                    )
+                }
+                
+                Section{
+                    HStack{
+                        Image(systemName: "envelope")
+                            .foregroundStyle(Color.gray)
+                            .padding(.leading, 8)
+                        TextField("Email", text: $viewModel.email)
+                            .textFieldStyle(DefaultTextFieldStyle())
+                            .autocorrectionDisabled()
+                            .frame(height: 50)
+                    }
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 5)
+                            .stroke(Color.gray, lineWidth: 1)
+                    )
+                }
+                Section{
+                    HStack{
+                        Image(systemName: "lock")
+                            .foregroundColor(.gray)
+                            .padding(.leading, 8)
+                        SecureField("Password", text: $viewModel.password)
+                            .textFieldStyle(DefaultTextFieldStyle())
+                            .autocorrectionDisabled()
+                            .frame(height: 50)
+                    }
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 5)
+                            .stroke(Color.gray, lineWidth: 1)
+                    )
+                }
+                Text("By Signing Up, you agree to our ")
+                +
+                Text("Terms & Conditions")
+                    .foregroundStyle(Color.newPrimary)
+                +
+                Text(" and ")
+                +
+                Text("Privacy Policy.")
+                    .foregroundStyle(Color.newPrimary)
+                
+            }
+            .listSectionSpacing(10)
+            .frame(height: 350)
+            .scrollContentBackground(.hidden)
+            
             Button {
                 viewModel.register()
             } label: {
                 ZStack{
-                    RoundedRectangle(cornerRadius: 15)
-                        .foregroundStyle(.blue)
-                        .frame(width: 150, height: 50)
+                    RoundedRectangle(cornerRadius: 10)
+                        .foregroundStyle(Color.newPrimary)
+                        .frame(width: 320, height: 50)
                         .overlay(
-                            RoundedRectangle(cornerRadius: 15)
-                                .stroke(Color.black, lineWidth: 1)
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.white, lineWidth: 1)
                         )
                     Text("Sign Up")
-                        .foregroundStyle(.black)
+                        .foregroundStyle(.white)
                         .bold()
                         .font(.system(size: 20))
                 }
             }
+            .padding(.bottom,10)
+            VStack{
+                // To Implement Functionality
+                Text("or sign up with")
+                    .foregroundStyle(Color.gray)
+                HStack(spacing: 30){
+                    Image("apple")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                    Image("meta")
+                        .resizable()
+                        .frame(width: 50, height: 35)
+                    Image("google")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                }
+            }
+            HStack{
+                Text("Already have an account?")
+                    .foregroundStyle(Color.gray)
+                NavigationLink{
+                    LoginView()
+                } label: {
+                    Text("Log In")
+                        .underline()
+                        .foregroundStyle(Color.newPrimary)
+                }
+            }
+            .padding(10)
             
         }
+     
+        
     }
 }
 

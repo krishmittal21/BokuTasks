@@ -13,8 +13,7 @@ struct LoginView: View {
         VStack{
             Text("Log In")
                 .font(.system(size: 35, weight: .medium, design: .rounded))
-                .foregroundStyle(Color.gray)
-                .padding(.top, 50)
+                .padding(.top,50)
                 .ignoresSafeArea()
             Spacer()
             if  !viewModel.errorMessage.isEmpty{
