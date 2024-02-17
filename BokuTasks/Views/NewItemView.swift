@@ -21,11 +21,18 @@ struct NewItemView: View {
                 DatePicker("Due Date", selection: $viewModel.dueDate)
                     .datePickerStyle(GraphicalDatePickerStyle())
                 BTButton(action: {
-                    viewModel.save()
-                    newItemPresented = false
+                    if viewModel.canSave{
+                        viewModel.save()
+                        newItemPresented = false
+                    } else {
+                        viewModel.showAlert = true
+                    }
                 }, backgroundColor: Color.newSecondary, text: "Save", textColor: .white)
                 .padding()
             }
+            .alert(isPresented: $viewModel.showAlert, content: {
+                Alert(title: Text("Error"), message: Text("Please fill in all fields and select a newer date"))
+            })
         }
     }
 }
