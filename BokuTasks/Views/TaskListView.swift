@@ -19,7 +19,12 @@ struct TaskListView: View {
         NavigationView{
             VStack{
                 List(items) { item in
-                    Text(item.title)
+                    TaskListItemView(item: item)
+                        .swipeActions{
+                            Button(action: viewModel.delete(id: item.id), label: {
+                                Text("Delete")
+                            })
+                        }
                 }
                 .listStyle(PlainListStyle())
             }

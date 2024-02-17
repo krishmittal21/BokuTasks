@@ -10,4 +10,6 @@ import Foundation
 class TaskListViewViewModel: ObservableObject {
     @Published var showingNewItem = false
     init() {}
+    
+    func delete(id: String)
 }

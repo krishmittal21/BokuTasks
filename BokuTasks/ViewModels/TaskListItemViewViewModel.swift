@@ -8,4 +8,6 @@
 import Foundation
 class TaskListItemViewViewModel: ObservableObject {
     init(){}
+    
+    func toggleIsDone(item: TaskItem){}
 }
