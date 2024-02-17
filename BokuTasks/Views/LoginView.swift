@@ -20,7 +20,6 @@ struct LoginView: View {
                     .foregroundStyle(Color.red)
             }
             Form {
-                
                 Section{
                     HStack{
                         Image(systemName: "envelope")
