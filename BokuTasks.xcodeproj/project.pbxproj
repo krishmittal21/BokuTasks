@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC5481992B804E45000BB7A6 /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5481982B804E45000BB7A6 /* CalenderView.swift */; };
+		CC5481992B804E45000BB7A6 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5481982B804E45000BB7A6 /* CalendarView.swift */; };
 		CC54819D2B804ED3000BB7A6 /* CalendarViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC54819C2B804ED3000BB7A6 /* CalendarViewViewModel.swift */; };
 		CC5481A12B8058CB000BB7A6 /* BTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5481A02B8058CB000BB7A6 /* BTButton.swift */; };
 		CC744C6C2B7F00C300C3D1C8 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC744C6B2B7F00C300C3D1C8 /* AuthenticationView.swift */; };
@@ -70,7 +70,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CC5481982B804E45000BB7A6 /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
+		CC5481982B804E45000BB7A6 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		CC54819C2B804ED3000BB7A6 /* CalendarViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewViewModel.swift; sourceTree = "<group>"; };
 		CC5481A02B8058CB000BB7A6 /* BTButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTButton.swift; sourceTree = "<group>"; };
 		CC744C6B2B7F00C300C3D1C8 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
@@ -202,7 +202,7 @@
 				CC77CEE82B7DC95F007B4CB5 /* TaskListItemView.swift */,
 				CC744C6B2B7F00C300C3D1C8 /* AuthenticationView.swift */,
 				CC744C6D2B7F013300C3D1C8 /* BTAuthButton.swift */,
-				CC5481982B804E45000BB7A6 /* CalenderView.swift */,
+				CC5481982B804E45000BB7A6 /* CalendarView.swift */,
 				CC5481A02B8058CB000BB7A6 /* BTButton.swift */,
 			);
 			path = Views;
@@ -350,7 +350,7 @@
 				CC77CEE52B7DC930007B4CB5 /* TaskListView.swift in Sources */,
 				CC77CED92B7DC856007B4CB5 /* Users.swift in Sources */,
 				CC77CEF52B7DC9C8007B4CB5 /* TaskCalenderViewViewModel.swift in Sources */,
-				CC5481992B804E45000BB7A6 /* CalenderView.swift in Sources */,
+				CC5481992B804E45000BB7A6 /* CalendarView.swift in Sources */,
 				CC77CEE12B7DC8F0007B4CB5 /* NewItemView.swift in Sources */,
 				CC77CEE92B7DC95F007B4CB5 /* TaskListItemView.swift in Sources */,
 				CC744C702B7F0C0500C3D1C8 /* Extensions.swift in Sources */,

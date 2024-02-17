@@ -24,7 +24,7 @@ struct MainView: View {
                 .tabItem {
                     Label("", systemImage: "checklist")
                 }
-            CalenderView()
+            CalendarView()
                 .tabItem {
                     Label("", systemImage: "calendar")
                 }
