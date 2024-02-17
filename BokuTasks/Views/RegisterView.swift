@@ -95,24 +95,9 @@ struct RegisterView: View {
             .frame(height: 350)
             .scrollContentBackground(.hidden)
             
-            Button {
-                viewModel.register()
-            } label: {
-                ZStack{
-                    RoundedRectangle(cornerRadius: 10)
-                        .foregroundStyle(Color.newPrimary)
-                        .frame(width: 320, height: 50)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.white, lineWidth: 1)
-                        )
-                    Text("Sign Up")
-                        .foregroundStyle(.white)
-                        .bold()
-                        .font(.system(size: 20))
-                }
-            }
+            BTButton(action: viewModel.register, backgroundColor: Color.newPrimary, text: "Sign Up", textColor: .white)
             .padding(.bottom,10)
+            
             VStack{
                 // To Implement Functionality
                 Text("or sign up with")
@@ -143,8 +128,6 @@ struct RegisterView: View {
             .padding(10)
             
         }
-     
-        
     }
 }
 
