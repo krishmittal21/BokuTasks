@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct CalenderView: View {
+struct CalendarView: View {
     var body: some View {
         Text("Calendar")
     }
 }
 
 #Preview {
-    CalenderView()
+    CalendarView()
 }
