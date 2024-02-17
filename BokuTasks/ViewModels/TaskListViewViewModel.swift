@@ -8,5 +8,6 @@
 import Foundation
 
 class TaskListViewViewModel: ObservableObject {
+    @Published var showingNewItem = false
     init() {}
 }

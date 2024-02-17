@@ -21,10 +21,13 @@ struct TaskListView: View {
             .navigationTitle("Tasks")
             .toolbar{
                 Button{
-                    
+                    viewModel.showingNewItem = true
                 } label: {
                     Image(systemName: "plus")
                 }
+            }
+            .sheet(isPresented: $viewModel.showingNewItem ){
+                NewItemView(newItemPresented: $viewModel.showingNewItem)
             }
         }
         
