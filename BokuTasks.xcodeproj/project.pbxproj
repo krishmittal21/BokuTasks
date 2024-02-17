@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC5481992B804E45000BB7A6 /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5481982B804E45000BB7A6 /* CalenderView.swift */; };
+		CC54819D2B804ED3000BB7A6 /* CalendarViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC54819C2B804ED3000BB7A6 /* CalendarViewViewModel.swift */; };
+		CC54819F2B8056C7000BB7A6 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC54819E2B8056C7000BB7A6 /* TabBarView.swift */; };
 		CC744C6C2B7F00C300C3D1C8 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC744C6B2B7F00C300C3D1C8 /* AuthenticationView.swift */; };
 		CC744C6E2B7F013300C3D1C8 /* BTAuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC744C6D2B7F013300C3D1C8 /* BTAuthButton.swift */; };
 		CC744C702B7F0C0500C3D1C8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC744C6F2B7F0C0500C3D1C8 /* Extensions.swift */; };
@@ -49,7 +52,7 @@
 		CC77CEE12B7DC8F0007B4CB5 /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77CEE02B7DC8F0007B4CB5 /* NewItemView.swift */; };
 		CC77CEE32B7DC908007B4CB5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77CEE22B7DC908007B4CB5 /* ProfileView.swift */; };
 		CC77CEE52B7DC930007B4CB5 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77CEE42B7DC930007B4CB5 /* TaskListView.swift */; };
-		CC77CEE72B7DC944007B4CB5 /* TaskCalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77CEE62B7DC944007B4CB5 /* TaskCalenderView.swift */; };
+		CC77CEE72B7DC944007B4CB5 /* TaskCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77CEE62B7DC944007B4CB5 /* TaskCalendarView.swift */; };
 		CC77CEE92B7DC95F007B4CB5 /* TaskListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77CEE82B7DC95F007B4CB5 /* TaskListItemView.swift */; };
 		CC77CEEB2B7DC98E007B4CB5 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77CEEA2B7DC98E007B4CB5 /* LoginViewViewModel.swift */; };
 		CC77CEED2B7DC999007B4CB5 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77CEEC2B7DC999007B4CB5 /* RegisterViewViewModel.swift */; };
@@ -67,6 +70,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC5481982B804E45000BB7A6 /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
+		CC54819C2B804ED3000BB7A6 /* CalendarViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewViewModel.swift; sourceTree = "<group>"; };
+		CC54819E2B8056C7000BB7A6 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		CC744C6B2B7F00C300C3D1C8 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		CC744C6D2B7F013300C3D1C8 /* BTAuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTAuthButton.swift; sourceTree = "<group>"; };
 		CC744C6F2B7F0C0500C3D1C8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -83,7 +89,7 @@
 		CC77CEE02B7DC8F0007B4CB5 /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
 		CC77CEE22B7DC908007B4CB5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CC77CEE42B7DC930007B4CB5 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
-		CC77CEE62B7DC944007B4CB5 /* TaskCalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCalenderView.swift; sourceTree = "<group>"; };
+		CC77CEE62B7DC944007B4CB5 /* TaskCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCalendarView.swift; sourceTree = "<group>"; };
 		CC77CEE82B7DC95F007B4CB5 /* TaskListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListItemView.swift; sourceTree = "<group>"; };
 		CC77CEEA2B7DC98E007B4CB5 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		CC77CEEC2B7DC999007B4CB5 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
@@ -192,10 +198,12 @@
 				CC77CEE02B7DC8F0007B4CB5 /* NewItemView.swift */,
 				CC77CEE22B7DC908007B4CB5 /* ProfileView.swift */,
 				CC77CEE42B7DC930007B4CB5 /* TaskListView.swift */,
-				CC77CEE62B7DC944007B4CB5 /* TaskCalenderView.swift */,
+				CC77CEE62B7DC944007B4CB5 /* TaskCalendarView.swift */,
 				CC77CEE82B7DC95F007B4CB5 /* TaskListItemView.swift */,
 				CC744C6B2B7F00C300C3D1C8 /* AuthenticationView.swift */,
 				CC744C6D2B7F013300C3D1C8 /* BTAuthButton.swift */,
+				CC5481982B804E45000BB7A6 /* CalenderView.swift */,
+				CC54819E2B8056C7000BB7A6 /* TabBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,6 +219,7 @@
 				CC77CEF42B7DC9C8007B4CB5 /* TaskCalenderViewViewModel.swift */,
 				CC77CEF62B7DC9D7007B4CB5 /* TaskListItemViewViewModel.swift */,
 				CC77CEF82B7DC9EA007B4CB5 /* MainViewViewModel.swift */,
+				CC54819C2B804ED3000BB7A6 /* CalendarViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -341,6 +350,7 @@
 				CC77CEE52B7DC930007B4CB5 /* TaskListView.swift in Sources */,
 				CC77CED92B7DC856007B4CB5 /* Users.swift in Sources */,
 				CC77CEF52B7DC9C8007B4CB5 /* TaskCalenderViewViewModel.swift in Sources */,
+				CC5481992B804E45000BB7A6 /* CalenderView.swift in Sources */,
 				CC77CEE12B7DC8F0007B4CB5 /* NewItemView.swift in Sources */,
 				CC77CEE92B7DC95F007B4CB5 /* TaskListItemView.swift in Sources */,
 				CC744C702B7F0C0500C3D1C8 /* Extensions.swift in Sources */,
@@ -348,13 +358,15 @@
 				CC77CEED2B7DC999007B4CB5 /* RegisterViewViewModel.swift in Sources */,
 				CC77CEEB2B7DC98E007B4CB5 /* LoginViewViewModel.swift in Sources */,
 				CC77CEF72B7DC9D7007B4CB5 /* TaskListItemViewViewModel.swift in Sources */,
+				CC54819D2B804ED3000BB7A6 /* CalendarViewViewModel.swift in Sources */,
 				CC77CEDF2B7DC8BF007B4CB5 /* RegisterView.swift in Sources */,
 				CC77CEDD2B7DC8B3007B4CB5 /* LoginView.swift in Sources */,
+				CC54819F2B8056C7000BB7A6 /* TabBarView.swift in Sources */,
 				CC744C6C2B7F00C300C3D1C8 /* AuthenticationView.swift in Sources */,
 				CC77CEF32B7DC9BC007B4CB5 /* TaskListViewViewModel.swift in Sources */,
 				CC77CEF92B7DC9EA007B4CB5 /* MainViewViewModel.swift in Sources */,
 				CC77CEDB2B7DC879007B4CB5 /* TaskItem.swift in Sources */,
-				CC77CEE72B7DC944007B4CB5 /* TaskCalenderView.swift in Sources */,
+				CC77CEE72B7DC944007B4CB5 /* TaskCalendarView.swift in Sources */,
 				CC77CEEF2B7DC9A4007B4CB5 /* NewItemViewViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

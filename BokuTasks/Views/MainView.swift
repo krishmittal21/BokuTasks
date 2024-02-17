@@ -11,7 +11,7 @@ struct MainView: View {
     @StateObject var viewModel = MainViewViewModel()
     var body: some View {
         if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
-            TaskListView()
+            TabBarView()
         } else {
             AuthenticationView()
         }
