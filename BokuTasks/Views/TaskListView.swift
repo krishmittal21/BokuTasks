@@ -21,9 +21,10 @@ struct TaskListView: View {
                 List(items) { item in
                     TaskListItemView(item: item)
                         .swipeActions{
-                            Button(action: viewModel.delete(id: item.id), label: {
-                                Text("Delete")
-                            })
+                            Button("Delete"){
+                                viewModel.delete(id: item.id)
+                            }
+                            .tint(.red)
                         }
                 }
                 .listStyle(PlainListStyle())
