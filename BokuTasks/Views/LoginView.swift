@@ -59,23 +59,9 @@ struct LoginView: View {
             .listSectionSpacing(10)
             .frame(height: 350)
             .scrollContentBackground(.hidden)
-            Button {
-                viewModel.login()
-            } label: {
-                ZStack{
-                    RoundedRectangle(cornerRadius: 10)
-                        .foregroundStyle(Color.newPrimary)
-                        .frame(width: 320, height: 50)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.white, lineWidth: 1)
-                        )
-                    Text("Log In")
-                        .foregroundStyle(.white)
-                        .bold()
-                        .font(.system(size: 20))
-                }
-            }
+            
+            BTButton(action: viewModel.login, backgroundColor: Color.newPrimary, text: "Log In", textColor: .white)
+            
             VStack{
                 // To Implement Functionality
                 Text("or log in with")
