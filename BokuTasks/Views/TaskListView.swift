@@ -8,12 +8,13 @@
 import SwiftUI
 import FirebaseFirestoreSwift
 struct TaskListView: View {
-    @StateObject var viewModel = TaskListViewViewModel()
+    @StateObject var viewModel: TaskListViewViewModel
     @FirestoreQuery var items: [TaskItem]
     private let userId: String
     init(userId: String){
         self.userId = userId
         self._items = FirestoreQuery(collectionPath: "users/\(userId)/tasks")
+        self._viewModel = StateObject(wrappedValue: TaskListViewViewModel(userId: userId))
     }
     var body: some View {
         NavigationView{
