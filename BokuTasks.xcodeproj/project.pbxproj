@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CC5481992B804E45000BB7A6 /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5481982B804E45000BB7A6 /* CalenderView.swift */; };
 		CC54819D2B804ED3000BB7A6 /* CalendarViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC54819C2B804ED3000BB7A6 /* CalendarViewViewModel.swift */; };
-		CC54819F2B8056C7000BB7A6 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC54819E2B8056C7000BB7A6 /* TabBarView.swift */; };
 		CC5481A12B8058CB000BB7A6 /* BTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5481A02B8058CB000BB7A6 /* BTButton.swift */; };
 		CC744C6C2B7F00C300C3D1C8 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC744C6B2B7F00C300C3D1C8 /* AuthenticationView.swift */; };
 		CC744C6E2B7F013300C3D1C8 /* BTAuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC744C6D2B7F013300C3D1C8 /* BTAuthButton.swift */; };
@@ -73,7 +72,6 @@
 /* Begin PBXFileReference section */
 		CC5481982B804E45000BB7A6 /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
 		CC54819C2B804ED3000BB7A6 /* CalendarViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewViewModel.swift; sourceTree = "<group>"; };
-		CC54819E2B8056C7000BB7A6 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		CC5481A02B8058CB000BB7A6 /* BTButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTButton.swift; sourceTree = "<group>"; };
 		CC744C6B2B7F00C300C3D1C8 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		CC744C6D2B7F013300C3D1C8 /* BTAuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTAuthButton.swift; sourceTree = "<group>"; };
@@ -205,7 +203,6 @@
 				CC744C6B2B7F00C300C3D1C8 /* AuthenticationView.swift */,
 				CC744C6D2B7F013300C3D1C8 /* BTAuthButton.swift */,
 				CC5481982B804E45000BB7A6 /* CalenderView.swift */,
-				CC54819E2B8056C7000BB7A6 /* TabBarView.swift */,
 				CC5481A02B8058CB000BB7A6 /* BTButton.swift */,
 			);
 			path = Views;
@@ -365,7 +362,6 @@
 				CC54819D2B804ED3000BB7A6 /* CalendarViewViewModel.swift in Sources */,
 				CC77CEDF2B7DC8BF007B4CB5 /* RegisterView.swift in Sources */,
 				CC77CEDD2B7DC8B3007B4CB5 /* LoginView.swift in Sources */,
-				CC54819F2B8056C7000BB7A6 /* TabBarView.swift in Sources */,
 				CC744C6C2B7F00C300C3D1C8 /* AuthenticationView.swift in Sources */,
 				CC77CEF32B7DC9BC007B4CB5 /* TaskListViewViewModel.swift in Sources */,
 				CC77CEF92B7DC9EA007B4CB5 /* MainViewViewModel.swift in Sources */,

@@ -11,13 +11,28 @@ struct MainView: View {
     @StateObject var viewModel = MainViewViewModel()
     var body: some View {
         if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
-            TabBarView()
+            accountView
         } else {
             AuthenticationView()
         }
     }
-}
-
-#Preview {
-    MainView()
+    
+    @ViewBuilder
+    var accountView: some View {
+        TabView{
+            TaskListView(userId: viewModel.currentUserId)
+                .tabItem {
+                    Label("", systemImage: "checklist")
+                }
+            CalenderView()
+                .tabItem {
+                    Label("", systemImage: "calendar")
+                }
+            ProfileView()
+                .tabItem {
+                    Label("", systemImage: "person.circle")
+                }
+        }
+        .accentColor(Color.newPrimary)
+    }
 }
