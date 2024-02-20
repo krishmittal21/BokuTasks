@@ -10,6 +10,9 @@ import SwiftUI
 extension Color {
     static let newPrimary = Color("PrimaryColor")
     static let newSecondary = Color("SecondaryColor")
+    static let Gradient1 = Color("Gradient1")
+    static let Gradient2 = Color("Gradient2")
+    static let Gradient3 = Color("Gradient3")
 }
 
 extension Encodable {
