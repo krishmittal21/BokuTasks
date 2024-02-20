@@ -31,13 +31,13 @@ struct TaskListView: View {
                         isTodoSelected = true
                     }) {
                         Text("Todo")
-                            .foregroundColor(isTodoSelected ? .blue : .black)
+                            .foregroundColor(isTodoSelected ? .newPrimary : .black)
                     }
                     Button(action: {
                         isTodoSelected = false
                     }) {
                         Text("Completed")
-                            .foregroundColor(isTodoSelected ? .black : .blue)
+                            .foregroundColor(isTodoSelected ? .black : .newPrimary)
                     }
                 }
                 .padding(.horizontal,65)
