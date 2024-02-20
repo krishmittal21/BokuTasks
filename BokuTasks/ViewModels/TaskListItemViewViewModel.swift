@@ -18,6 +18,7 @@ class TaskListItemViewViewModel: ObservableObject {
         guard let uid = Auth.auth().currentUser?.uid else {
             return
         }
+        
         let db = Firestore.firestore()
         db.collection("users")
             .document(uid)

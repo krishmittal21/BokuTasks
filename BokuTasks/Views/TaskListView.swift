@@ -24,8 +24,8 @@ struct TaskListView: View {
     var body: some View {
         
         NavigationView{
-            VStack{
-                Spacer()
+            VStack(alignment: .trailing){
+                                
                 HStack(spacing: 100){
                     Button(action: {
                         isTodoSelected = true
@@ -40,35 +40,32 @@ struct TaskListView: View {
                             .foregroundColor(isTodoSelected ? .black : .blue)
                     }
                 }
-                
-                
+                .padding(.horizontal,65)
+
                 if isTodoSelected {
                     tasksLeft
                 } else {
                     tasksCompleted
                 }
                 
-            }
-            .navigationTitle("Tasks")
-            .padding()
-            .toolbar{
                 Button{
                     viewModel.showingNewItem = true
                 } label: {
-                    ZStack{
+                    ZStack(){
                         Circle()
-                            .stroke(Color.gray, lineWidth: 1)
+                            .foregroundStyle(Color.newPrimary)
+                            .frame(width: 70)
                         Image(systemName: "plus")
                             .resizable()
-                            .frame(width: 40, height: 40)
+                            .frame(width: 20, height: 20)
+                            .foregroundStyle(.white)
                     }
-                    
                 }
-                
             }
+            .navigationTitle("Tasks")
+            .padding()
             .sheet(isPresented: $viewModel.showingNewItem ){
                 NewItemView(newItemPresented: $viewModel.showingNewItem)
-                
             }
             .background(LinearGradient(gradient: Gradient(colors: [Color.Gradient1, Color.Gradient2, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing))
         }
@@ -79,16 +76,19 @@ struct TaskListView: View {
     @ViewBuilder
     var tasksLeft: some View {
         let filteredItems = items.filter { !$0.isDone }
-        List(filteredItems) { item in
-            TaskListItemView(item: item)
-                .swipeActions{
-                    Button("Delete"){
-                        viewModel.delete(id: item.id)
+        ZStack{
+            List(filteredItems) { item in
+                TaskListItemView(item: item)
+                    .swipeActions{
+                        Button("Delete"){
+                            viewModel.delete(id: item.id)
+                        }
+                        .tint(.red)
                     }
-                    .tint(.red)
-                }
+            }
+            .listStyle(PlainListStyle())
+            .cornerRadius(10)
         }
-        .listStyle(PlainListStyle())
     }
     
     
