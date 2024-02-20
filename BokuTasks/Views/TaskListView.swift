@@ -25,6 +25,7 @@ struct TaskListView: View {
         
         NavigationView{
             VStack{
+                Spacer()
                 HStack(spacing: 100){
                     Button(action: {
                         isTodoSelected = true
@@ -49,6 +50,7 @@ struct TaskListView: View {
                 
             }
             .navigationTitle("Tasks")
+            .padding()
             .toolbar{
                 Button{
                     viewModel.showingNewItem = true
@@ -66,7 +68,9 @@ struct TaskListView: View {
             }
             .sheet(isPresented: $viewModel.showingNewItem ){
                 NewItemView(newItemPresented: $viewModel.showingNewItem)
+                
             }
+            .background(LinearGradient(gradient: Gradient(colors: [Color.Gradient1, Color.Gradient2, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing))
         }
         
     }
