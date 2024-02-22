@@ -25,19 +25,31 @@ struct TaskListView: View {
         
         NavigationView{
             VStack(alignment: .trailing){
-                                
+        
                 HStack(spacing: 100){
+                    
                     Button(action: {
                         isTodoSelected = true
                     }) {
                         Text("Todo")
-                            .foregroundColor(isTodoSelected ? .newPrimary : .black)
+                            .padding(10)
+                            .foregroundColor(.black)
+                            .background(
+                                RoundedRectangle(cornerRadius: 20)
+                                    .foregroundStyle(isTodoSelected ? Color.white : Color.clear)
+                            )
                     }
+                    
                     Button(action: {
                         isTodoSelected = false
                     }) {
-                        Text("Completed")
-                            .foregroundColor(isTodoSelected ? .black : .newPrimary)
+                        Text("Done")
+                            .padding(10)
+                            .foregroundColor(.black)
+                            .background(
+                                RoundedRectangle(cornerRadius: 20)
+                                    .foregroundStyle(isTodoSelected ? Color.clear : Color.white)
+                            )
                     }
                 }
                 .padding(.horizontal,65)
@@ -45,7 +57,7 @@ struct TaskListView: View {
                 if isTodoSelected {
                     tasksLeft
                 } else {
-                    tasksCompleted
+                    tasksDone
                 }
                 
                 Button{
@@ -62,24 +74,18 @@ struct TaskListView: View {
                     }
                 }
             }
-            .navigationTitle("Tasks")
+            .navigationTitle(Text("Hi \(viewModel.userName)!"))
             .padding()
             .sheet(isPresented: $viewModel.showingNewItem ){
                 NewItemView(newItemPresented: $viewModel.showingNewItem)
             }
             .background(Color.backgroundColor)
-            
-            /*
-            .background(LinearGradient(gradient: Gradient(colors: [Color.Gradient1, Color.Gradient2, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing))
-            */
         }
-        
     }
-    
     
     @ViewBuilder
     var tasksLeft: some View {
-        let filteredItems = items.filter { !$0.isDone }
+        let filteredItems = items.filter { !$0.isDone }.sorted(by: {$0.dueDate < $1.dueDate})
         ZStack{
             List(filteredItems) { item in
                 TaskListItemView(item: item)
@@ -95,20 +101,22 @@ struct TaskListView: View {
         }
     }
     
-    
     @ViewBuilder
-    var tasksCompleted: some View {
-        let filteredItems = items.filter { $0.isDone }
-        List(filteredItems) { item in
-            TaskListItemView(item: item)
-                .swipeActions{
-                    Button("Delete"){
-                        viewModel.delete(id: item.id)
+    var tasksDone: some View {
+        let filteredItems = items.filter { $0.isDone }.sorted(by: {$0.dueDate < $1.dueDate})
+        ZStack{
+            List(filteredItems) { item in
+                TaskListItemView(item: item)
+                    .swipeActions{
+                        Button("Delete"){
+                            viewModel.delete(id: item.id)
+                        }
+                        .tint(.red)
                     }
-                    .tint(.red)
-                }
+            }
+            .listStyle(PlainListStyle())
+            .cornerRadius(10)
         }
-        .listStyle(PlainListStyle())
     }
 }
  
