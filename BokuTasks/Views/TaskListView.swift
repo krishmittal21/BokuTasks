@@ -68,10 +68,6 @@ struct TaskListView: View {
                 NewItemView(newItemPresented: $viewModel.showingNewItem)
             }
             .background(Color.backgroundColor)
-            
-            /*
-            .background(LinearGradient(gradient: Gradient(colors: [Color.Gradient1, Color.Gradient2, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing))
-            */
         }
         
     }
@@ -79,7 +75,7 @@ struct TaskListView: View {
     
     @ViewBuilder
     var tasksLeft: some View {
-        let filteredItems = items.filter { !$0.isDone }
+        let filteredItems = items.filter { !$0.isDone }.sorted(by: {$0.dueDate < $1.dueDate})
         ZStack{
             List(filteredItems) { item in
                 TaskListItemView(item: item)
@@ -98,7 +94,7 @@ struct TaskListView: View {
     
     @ViewBuilder
     var tasksCompleted: some View {
-        let filteredItems = items.filter { $0.isDone }
+        let filteredItems = items.filter { $0.isDone }.sorted(by: {$0.dueDate < $1.dueDate})
         List(filteredItems) { item in
             TaskListItemView(item: item)
                 .swipeActions{
