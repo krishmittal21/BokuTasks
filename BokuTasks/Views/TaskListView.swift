@@ -67,7 +67,11 @@ struct TaskListView: View {
             .sheet(isPresented: $viewModel.showingNewItem ){
                 NewItemView(newItemPresented: $viewModel.showingNewItem)
             }
+            .background(Color.backgroundColor)
+            
+            /*
             .background(LinearGradient(gradient: Gradient(colors: [Color.Gradient1, Color.Gradient2, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing))
+            */
         }
         
     }
