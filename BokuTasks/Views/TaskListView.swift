@@ -25,7 +25,7 @@ struct TaskListView: View {
         
         NavigationView{
             VStack(alignment: .trailing){
-                                
+        
                 HStack(spacing: 100){
                     Button(action: {
                         isTodoSelected = true
@@ -62,16 +62,14 @@ struct TaskListView: View {
                     }
                 }
             }
-            .navigationTitle("Tasks")
+            .navigationTitle(Text("Hi \(viewModel.userName) !"))
             .padding()
             .sheet(isPresented: $viewModel.showingNewItem ){
                 NewItemView(newItemPresented: $viewModel.showingNewItem)
             }
             .background(Color.backgroundColor)
         }
-        
     }
-    
     
     @ViewBuilder
     var tasksLeft: some View {
@@ -109,7 +107,6 @@ struct TaskListView: View {
             .cornerRadius(10)
         }
     }
-    
 }
  
 
