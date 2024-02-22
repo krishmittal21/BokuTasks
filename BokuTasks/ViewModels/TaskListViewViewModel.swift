@@ -7,11 +7,12 @@
 
 import Foundation
 import FirebaseFirestore
+
 class TaskListViewViewModel: ObservableObject {
     @Published var showingNewItem = false
     @Published var userName: String = ""
-    
     private let userId: String
+    
     init(userId: String) {
         self.userId = userId
         fetchUserName()

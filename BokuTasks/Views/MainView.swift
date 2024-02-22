@@ -24,7 +24,7 @@ struct MainView: View {
                 .tabItem {
                     Label("", systemImage: "checklist")
                 }
-            CalendarView()
+            CalendarView(userId: viewModel.currentUserId)
                 .tabItem {
                     Label("", systemImage: "calendar")
                 }
