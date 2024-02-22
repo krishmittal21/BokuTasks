@@ -52,14 +52,12 @@
 		CC77CEE12B7DC8F0007B4CB5 /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77CEE02B7DC8F0007B4CB5 /* NewItemView.swift */; };
 		CC77CEE32B7DC908007B4CB5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77CEE22B7DC908007B4CB5 /* ProfileView.swift */; };
 		CC77CEE52B7DC930007B4CB5 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77CEE42B7DC930007B4CB5 /* TaskListView.swift */; };
-		CC77CEE72B7DC944007B4CB5 /* TaskCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77CEE62B7DC944007B4CB5 /* TaskCalendarView.swift */; };
 		CC77CEE92B7DC95F007B4CB5 /* TaskListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77CEE82B7DC95F007B4CB5 /* TaskListItemView.swift */; };
 		CC77CEEB2B7DC98E007B4CB5 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77CEEA2B7DC98E007B4CB5 /* LoginViewViewModel.swift */; };
 		CC77CEED2B7DC999007B4CB5 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77CEEC2B7DC999007B4CB5 /* RegisterViewViewModel.swift */; };
 		CC77CEEF2B7DC9A4007B4CB5 /* NewItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77CEEE2B7DC9A4007B4CB5 /* NewItemViewViewModel.swift */; };
 		CC77CEF12B7DC9AE007B4CB5 /* ProfileViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77CEF02B7DC9AE007B4CB5 /* ProfileViewViewModel.swift */; };
 		CC77CEF32B7DC9BC007B4CB5 /* TaskListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77CEF22B7DC9BC007B4CB5 /* TaskListViewViewModel.swift */; };
-		CC77CEF52B7DC9C8007B4CB5 /* TaskCalenderViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77CEF42B7DC9C8007B4CB5 /* TaskCalenderViewViewModel.swift */; };
 		CC77CEF72B7DC9D7007B4CB5 /* TaskListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77CEF62B7DC9D7007B4CB5 /* TaskListItemViewViewModel.swift */; };
 		CC77CEF92B7DC9EA007B4CB5 /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC77CEF82B7DC9EA007B4CB5 /* MainViewViewModel.swift */; };
 		CC77CEFC2B7DCB1C007B4CB5 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CC77CEFB2B7DCB1C007B4CB5 /* FirebaseAnalytics */; };
@@ -89,14 +87,12 @@
 		CC77CEE02B7DC8F0007B4CB5 /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
 		CC77CEE22B7DC908007B4CB5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CC77CEE42B7DC930007B4CB5 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
-		CC77CEE62B7DC944007B4CB5 /* TaskCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCalendarView.swift; sourceTree = "<group>"; };
 		CC77CEE82B7DC95F007B4CB5 /* TaskListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListItemView.swift; sourceTree = "<group>"; };
 		CC77CEEA2B7DC98E007B4CB5 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		CC77CEEC2B7DC999007B4CB5 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		CC77CEEE2B7DC9A4007B4CB5 /* NewItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewViewModel.swift; sourceTree = "<group>"; };
 		CC77CEF02B7DC9AE007B4CB5 /* ProfileViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewViewModel.swift; sourceTree = "<group>"; };
 		CC77CEF22B7DC9BC007B4CB5 /* TaskListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewViewModel.swift; sourceTree = "<group>"; };
-		CC77CEF42B7DC9C8007B4CB5 /* TaskCalenderViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCalenderViewViewModel.swift; sourceTree = "<group>"; };
 		CC77CEF62B7DC9D7007B4CB5 /* TaskListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListItemViewViewModel.swift; sourceTree = "<group>"; };
 		CC77CEF82B7DC9EA007B4CB5 /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -197,7 +193,6 @@
 				CC77CEC82B7DBC93007B4CB5 /* MainView.swift */,
 				CC77CEE02B7DC8F0007B4CB5 /* NewItemView.swift */,
 				CC77CEE22B7DC908007B4CB5 /* ProfileView.swift */,
-				CC77CEE62B7DC944007B4CB5 /* TaskCalendarView.swift */,
 				CC77CEE42B7DC930007B4CB5 /* TaskListView.swift */,
 				CC77CEE82B7DC95F007B4CB5 /* TaskListItemView.swift */,
 				CC744C6B2B7F00C300C3D1C8 /* AuthenticationView.swift */,
@@ -216,7 +211,6 @@
 				CC77CEEE2B7DC9A4007B4CB5 /* NewItemViewViewModel.swift */,
 				CC77CEF02B7DC9AE007B4CB5 /* ProfileViewViewModel.swift */,
 				CC77CEF22B7DC9BC007B4CB5 /* TaskListViewViewModel.swift */,
-				CC77CEF42B7DC9C8007B4CB5 /* TaskCalenderViewViewModel.swift */,
 				CC77CEF62B7DC9D7007B4CB5 /* TaskListItemViewViewModel.swift */,
 				CC77CEF82B7DC9EA007B4CB5 /* MainViewViewModel.swift */,
 				CC54819C2B804ED3000BB7A6 /* CalendarViewViewModel.swift */,
@@ -349,7 +343,6 @@
 				CC744C6E2B7F013300C3D1C8 /* BTAuthButton.swift in Sources */,
 				CC77CEE52B7DC930007B4CB5 /* TaskListView.swift in Sources */,
 				CC77CED92B7DC856007B4CB5 /* Users.swift in Sources */,
-				CC77CEF52B7DC9C8007B4CB5 /* TaskCalenderViewViewModel.swift in Sources */,
 				CC5481992B804E45000BB7A6 /* CalendarView.swift in Sources */,
 				CC77CEE12B7DC8F0007B4CB5 /* NewItemView.swift in Sources */,
 				CC77CEE92B7DC95F007B4CB5 /* TaskListItemView.swift in Sources */,
@@ -366,7 +359,6 @@
 				CC77CEF32B7DC9BC007B4CB5 /* TaskListViewViewModel.swift in Sources */,
 				CC77CEF92B7DC9EA007B4CB5 /* MainViewViewModel.swift in Sources */,
 				CC77CEDB2B7DC879007B4CB5 /* TaskItem.swift in Sources */,
-				CC77CEE72B7DC944007B4CB5 /* TaskCalendarView.swift in Sources */,
 				CC77CEEF2B7DC9A4007B4CB5 /* NewItemViewViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

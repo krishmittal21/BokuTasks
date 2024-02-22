@@ -36,8 +36,8 @@ struct CalendarView: View {
     @ViewBuilder
     var tasks: some View {
         let filteredItems = items.filter { task in
-                    let taskDate = Date(timeIntervalSince1970: task.dueDate)
-                    return Calendar.current.isDate(taskDate, equalTo: selectedDate, toGranularity: .day)
+            let taskDate = Date(timeIntervalSince1970: task.dueDate)
+            return Calendar.current.isDate(taskDate, equalTo: selectedDate, toGranularity: .day)
         }.sorted(by: { $0.dueDate < $1.dueDate })
         ZStack{
             List(filteredItems) { item in
