@@ -27,12 +27,13 @@ struct NewItemView: View {
                     } else {
                         viewModel.showAlert = true
                     }
-                }, backgroundColor: Color.newSecondary, text: "Save", textColor: .white)
+                }, backgroundColor: Color.newPrimary, text: "Save", textColor: .white)
                 .padding()
             }
             .alert(isPresented: $viewModel.showAlert, content: {
                 Alert(title: Text("Error"), message: Text("Please fill in all fields and select a newer date"))
             })
         }
+        .accentColor(Color.newPrimary)
     }
 }

@@ -95,17 +95,21 @@ struct TaskListView: View {
     @ViewBuilder
     var tasksCompleted: some View {
         let filteredItems = items.filter { $0.isDone }.sorted(by: {$0.dueDate < $1.dueDate})
-        List(filteredItems) { item in
-            TaskListItemView(item: item)
-                .swipeActions{
-                    Button("Delete"){
-                        viewModel.delete(id: item.id)
+        ZStack{
+            List(filteredItems) { item in
+                TaskListItemView(item: item)
+                    .swipeActions{
+                        Button("Delete"){
+                            viewModel.delete(id: item.id)
+                        }
+                        .tint(.red)
                     }
-                    .tint(.red)
-                }
+            }
+            .listStyle(PlainListStyle())
+            .cornerRadius(10)
         }
-        .listStyle(PlainListStyle())
     }
+    
 }
  
 
