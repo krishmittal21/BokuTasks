@@ -6,6 +6,12 @@
 //
 
 import Foundation
+import FirebaseFirestore
+
 class CalendarViewViewModel: ObservableObject {
-    init(){}
+    private let userId: String
+    
+    init(userId: String) {
+        self.userId = userId
+    }
 }

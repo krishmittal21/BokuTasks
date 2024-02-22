@@ -28,7 +28,6 @@ struct TaskListItemView: View {
             
             Text("\(Date(timeIntervalSince1970: item.dueDate).formatted(date: .abbreviated, time: .shortened))")
                 .font(.footnote)
-                //.foregroundStyle(Color.newPrimary)
         }
     }
 }

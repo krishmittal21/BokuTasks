@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
 
 struct NewItemView: View {
     @StateObject var viewModel = NewItemViewViewModel()

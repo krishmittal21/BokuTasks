@@ -8,6 +8,7 @@
 import Foundation
 import FirebaseAuth
 import FirebaseFirestore
+
 class TaskListItemViewViewModel: ObservableObject {
     init(){}
     

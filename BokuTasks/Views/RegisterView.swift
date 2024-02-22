@@ -11,12 +11,6 @@ struct RegisterView: View {
     @StateObject var viewModel = RegisterViewViewModel()
     var body: some View {
         VStack{
-            /*
-            Text("Sign Up")
-                .font(.system(size: 35, weight: .medium, design: .rounded))
-                .padding(.top,50)
-                .ignoresSafeArea()
-             */
             Spacer()
             VStack{
                 Text("Complete Your Profile")
