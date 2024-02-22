@@ -29,6 +29,8 @@ struct CalendarView: View {
             }
             tasks
         }
+        .padding()
+        .background(Color.backgroundColor)
     }
     
     @ViewBuilder
