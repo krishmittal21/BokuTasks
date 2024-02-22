@@ -9,7 +9,6 @@ import Foundation
 import FirebaseFirestore
 
 class CalendarViewViewModel: ObservableObject {
-    @Published var showingNewItem = false
     private let userId: String
     
     init(userId: String) {
