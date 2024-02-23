@@ -65,6 +65,13 @@
 		CC77CF002B7DCB1C007B4CB5 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CC77CEFF2B7DCB1C007B4CB5 /* FirebaseAnalyticsSwift */; };
 		CC77CF022B7DCB1C007B4CB5 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = CC77CF012B7DCB1C007B4CB5 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		CC77CF042B7DCB1C007B4CB5 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = CC77CF032B7DCB1C007B4CB5 /* FirebaseAppCheck */; };
+		CCFCC6542B8852280007D90D /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFCC6532B8852280007D90D /* AboutView.swift */; };
+		CCFCC6562B8852420007D90D /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFCC6552B8852420007D90D /* PrivacyView.swift */; };
+		CCFCC6582B8852530007D90D /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFCC6572B8852530007D90D /* WidgetView.swift */; };
+		CCFCC65A2B8852660007D90D /* AboutViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFCC6592B8852660007D90D /* AboutViewViewModel.swift */; };
+		CCFCC65C2B8852710007D90D /* PrivacyViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFCC65B2B8852710007D90D /* PrivacyViewViewModel.swift */; };
+		CCFCC65E2B88527D0007D90D /* WidgetViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFCC65D2B88527D0007D90D /* WidgetViewViewModel.swift */; };
+		CCFCC6602B8853260007D90D /* BTSettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFCC65F2B8853260007D90D /* BTSettingsButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +102,13 @@
 		CC77CEF22B7DC9BC007B4CB5 /* TaskListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewViewModel.swift; sourceTree = "<group>"; };
 		CC77CEF62B7DC9D7007B4CB5 /* TaskListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListItemViewViewModel.swift; sourceTree = "<group>"; };
 		CC77CEF82B7DC9EA007B4CB5 /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
+		CCFCC6532B8852280007D90D /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		CCFCC6552B8852420007D90D /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
+		CCFCC6572B8852530007D90D /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
+		CCFCC6592B8852660007D90D /* AboutViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewViewModel.swift; sourceTree = "<group>"; };
+		CCFCC65B2B8852710007D90D /* PrivacyViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewViewModel.swift; sourceTree = "<group>"; };
+		CCFCC65D2B88527D0007D90D /* WidgetViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetViewViewModel.swift; sourceTree = "<group>"; };
+		CCFCC65F2B8853260007D90D /* BTSettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTSettingsButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +213,10 @@
 				CC744C6D2B7F013300C3D1C8 /* BTAuthButton.swift */,
 				CC5481982B804E45000BB7A6 /* CalendarView.swift */,
 				CC5481A02B8058CB000BB7A6 /* BTButton.swift */,
+				CCFCC6532B8852280007D90D /* AboutView.swift */,
+				CCFCC6552B8852420007D90D /* PrivacyView.swift */,
+				CCFCC6572B8852530007D90D /* WidgetView.swift */,
+				CCFCC65F2B8853260007D90D /* BTSettingsButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,6 +232,9 @@
 				CC77CEF62B7DC9D7007B4CB5 /* TaskListItemViewViewModel.swift */,
 				CC77CEF82B7DC9EA007B4CB5 /* MainViewViewModel.swift */,
 				CC54819C2B804ED3000BB7A6 /* CalendarViewViewModel.swift */,
+				CCFCC6592B8852660007D90D /* AboutViewViewModel.swift */,
+				CCFCC65B2B8852710007D90D /* PrivacyViewViewModel.swift */,
+				CCFCC65D2B88527D0007D90D /* WidgetViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -338,9 +359,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC77CEE32B7DC908007B4CB5 /* ProfileView.swift in Sources */,
+				CCFCC65E2B88527D0007D90D /* WidgetViewViewModel.swift in Sources */,
 				CC77CEC92B7DBC93007B4CB5 /* MainView.swift in Sources */,
 				CC77CEF12B7DC9AE007B4CB5 /* ProfileViewViewModel.swift in Sources */,
 				CC744C6E2B7F013300C3D1C8 /* BTAuthButton.swift in Sources */,
+				CCFCC6562B8852420007D90D /* PrivacyView.swift in Sources */,
+				CCFCC6602B8853260007D90D /* BTSettingsButton.swift in Sources */,
 				CC77CEE52B7DC930007B4CB5 /* TaskListView.swift in Sources */,
 				CC77CED92B7DC856007B4CB5 /* Users.swift in Sources */,
 				CC5481992B804E45000BB7A6 /* CalendarView.swift in Sources */,
@@ -348,12 +372,16 @@
 				CC77CEE92B7DC95F007B4CB5 /* TaskListItemView.swift in Sources */,
 				CC744C702B7F0C0500C3D1C8 /* Extensions.swift in Sources */,
 				CC77CEC72B7DBC93007B4CB5 /* BokuTasksApp.swift in Sources */,
+				CCFCC6582B8852530007D90D /* WidgetView.swift in Sources */,
 				CC77CEED2B7DC999007B4CB5 /* RegisterViewViewModel.swift in Sources */,
+				CCFCC65C2B8852710007D90D /* PrivacyViewViewModel.swift in Sources */,
 				CC5481A12B8058CB000BB7A6 /* BTButton.swift in Sources */,
 				CC77CEEB2B7DC98E007B4CB5 /* LoginViewViewModel.swift in Sources */,
 				CC77CEF72B7DC9D7007B4CB5 /* TaskListItemViewViewModel.swift in Sources */,
 				CC54819D2B804ED3000BB7A6 /* CalendarViewViewModel.swift in Sources */,
+				CCFCC6542B8852280007D90D /* AboutView.swift in Sources */,
 				CC77CEDF2B7DC8BF007B4CB5 /* RegisterView.swift in Sources */,
+				CCFCC65A2B8852660007D90D /* AboutViewViewModel.swift in Sources */,
 				CC77CEDD2B7DC8B3007B4CB5 /* LoginView.swift in Sources */,
 				CC744C6C2B7F00C300C3D1C8 /* AuthenticationView.swift in Sources */,
 				CC77CEF32B7DC9BC007B4CB5 /* TaskListViewViewModel.swift in Sources */,
