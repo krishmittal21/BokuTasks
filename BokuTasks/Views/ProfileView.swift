@@ -24,47 +24,38 @@ struct ProfileView: View {
     
     @ViewBuilder
     func profile(user: User) -> some View {
-        Spacer()
-        //To Implement
-        Image(systemName: "person.circle")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .foregroundColor(Color.newPrimary)
-            .frame(width: 125, height: 125)
-            .padding()
-        
-        Spacer()
-        
-        VStack(alignment: .leading, spacing: 10){
-            HStack {
-                Text("Name: ")
-                    .font(.headline)
-                    .foregroundStyle(.gray)
-                Text(user.name)
-                    .font(.body)
+        NavigationView {
+            ScrollView {
+                HStack {
+                    Image(systemName: "person.circle")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .foregroundColor(Color.newPrimary)
+                        .frame(width: 85, height: 85)
+                        .padding()
+                    
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text(user.name)
+                            .font(.body)
+                        Text(user.email)
+                            .font(.body)
+                        HStack {
+                            Text("Member Since: ")
+                                .font(.headline)
+                                .foregroundColor(.gray)
+                            Text("\(Date(timeIntervalSince1970: user.joined).formatted(date: .abbreviated, time: .omitted))")
+                                .font(.body)
+                        }
+                    }
+                }
+                
+                Spacer()
+
+                BTButton(action: viewModel.logout, backgroundColor: .white, text: "Log Out", textColor: .red)
+
             }
-            HStack {
-                Text("Email: ")
-                    .font(.headline)
-                    .foregroundStyle(.gray)
-                Text(user.email)
-                    .font(.body)
-            }
-            HStack {
-                Text("Member Since: ")
-                    .font(.headline)
-                    .foregroundStyle(.gray)
-                Text("\(Date(timeIntervalSince1970: user.joined).formatted(date: .abbreviated, time: .shortened))")
-                    .font(.body)
-            }
+            .navigationTitle("Settings")
         }
-        .padding()
-        
-        Spacer()
-        
-        BTButton(action: viewModel.logout , backgroundColor: Color.newPrimary, text: "Log Out", textColor: .white)
-        
-        Spacer()
     }
 }
 
