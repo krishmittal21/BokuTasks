@@ -65,6 +65,8 @@
 		CC77CF002B7DCB1C007B4CB5 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CC77CEFF2B7DCB1C007B4CB5 /* FirebaseAnalyticsSwift */; };
 		CC77CF022B7DCB1C007B4CB5 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = CC77CF012B7DCB1C007B4CB5 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		CC77CF042B7DCB1C007B4CB5 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = CC77CF032B7DCB1C007B4CB5 /* FirebaseAppCheck */; };
+		CC8763312B889CF7002F5717 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8763302B889CF7002F5717 /* EditProfileView.swift */; };
+		CC8763332B889D04002F5717 /* EditProfileViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8763322B889D04002F5717 /* EditProfileViewViewModel.swift */; };
 		CCFCC6542B8852280007D90D /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFCC6532B8852280007D90D /* AboutView.swift */; };
 		CCFCC6562B8852420007D90D /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFCC6552B8852420007D90D /* PrivacyView.swift */; };
 		CCFCC6582B8852530007D90D /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFCC6572B8852530007D90D /* WidgetView.swift */; };
@@ -102,6 +104,8 @@
 		CC77CEF22B7DC9BC007B4CB5 /* TaskListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewViewModel.swift; sourceTree = "<group>"; };
 		CC77CEF62B7DC9D7007B4CB5 /* TaskListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListItemViewViewModel.swift; sourceTree = "<group>"; };
 		CC77CEF82B7DC9EA007B4CB5 /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
+		CC8763302B889CF7002F5717 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		CC8763322B889D04002F5717 /* EditProfileViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewViewModel.swift; sourceTree = "<group>"; };
 		CCFCC6532B8852280007D90D /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		CCFCC6552B8852420007D90D /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
 		CCFCC6572B8852530007D90D /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
@@ -217,6 +221,7 @@
 				CCFCC6552B8852420007D90D /* PrivacyView.swift */,
 				CCFCC6572B8852530007D90D /* WidgetView.swift */,
 				CCFCC65F2B8853260007D90D /* BTSettingsButton.swift */,
+				CC8763302B889CF7002F5717 /* EditProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,6 +240,7 @@
 				CCFCC6592B8852660007D90D /* AboutViewViewModel.swift */,
 				CCFCC65B2B8852710007D90D /* PrivacyViewViewModel.swift */,
 				CCFCC65D2B88527D0007D90D /* WidgetViewViewModel.swift */,
+				CC8763322B889D04002F5717 /* EditProfileViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -379,7 +385,9 @@
 				CC77CEEB2B7DC98E007B4CB5 /* LoginViewViewModel.swift in Sources */,
 				CC77CEF72B7DC9D7007B4CB5 /* TaskListItemViewViewModel.swift in Sources */,
 				CC54819D2B804ED3000BB7A6 /* CalendarViewViewModel.swift in Sources */,
+				CC8763312B889CF7002F5717 /* EditProfileView.swift in Sources */,
 				CCFCC6542B8852280007D90D /* AboutView.swift in Sources */,
+				CC8763332B889D04002F5717 /* EditProfileViewViewModel.swift in Sources */,
 				CC77CEDF2B7DC8BF007B4CB5 /* RegisterView.swift in Sources */,
 				CCFCC65A2B8852660007D90D /* AboutViewViewModel.swift in Sources */,
 				CC77CEDD2B7DC8B3007B4CB5 /* LoginView.swift in Sources */,

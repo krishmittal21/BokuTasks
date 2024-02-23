@@ -1,5 +1,5 @@
 //
-//  AboutView.swift
+//  EditProfileView.swift
 //  BokuTasks
 //
 //  Created by Krish Mittal on 23/02/24.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct AboutView: View {
+struct EditProfileView: View {
     var body: some View {
-        Text("About")
+        Text("Edit Profile")
     }
 }
 
 #Preview {
-    AboutView()
+    EditProfileView()
 }
