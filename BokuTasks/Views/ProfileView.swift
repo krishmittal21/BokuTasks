@@ -10,64 +10,87 @@ import SwiftUI
 struct ProfileView: View {
     @StateObject var viewModel = ProfileViewViewModel()
     var body: some View {
-        VStack{
-            if let user = viewModel.user {
-                profile(user: user)
-            } else {
-                Text("Loading Profile ...")
+        NavigationView {
+            ZStack {
+                Color.backgroundColor.edgesIgnoringSafeArea(.all)
+                VStack{
+                    if let user = viewModel.user {
+                        profile(user: user)
+                    } else {
+                        Text("Loading Profile ...")
+                    }
+                }
+                .navigationTitle("Settings")
+                .onAppear{
+                    viewModel.fetchUser()
+                }
             }
-        }
-        .onAppear{
-            viewModel.fetchUser()
         }
     }
-    
     @ViewBuilder
     func profile(user: User) -> some View {
-        Spacer()
-        //To Implement
-        Image(systemName: "person.circle")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .foregroundColor(Color.newPrimary)
-            .frame(width: 125, height: 125)
-            .padding()
         
-        Spacer()
-        
-        VStack(alignment: .leading, spacing: 10){
-            HStack {
-                Text("Name: ")
-                    .font(.headline)
-                    .foregroundStyle(.gray)
+        HStack{
+            //To Implement
+            Image(systemName: "person.circle")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .foregroundStyle(.white)
+                .frame(width: 80, height: 80)
+                .padding()
+            
+            VStack (alignment: .leading){
+                
                 Text(user.name)
                     .font(.body)
-            }
-            HStack {
-                Text("Email: ")
-                    .font(.headline)
-                    .foregroundStyle(.gray)
+                    .bold()
+                
                 Text(user.email)
                     .font(.body)
+                
+                HStack {
+                    Text("Member Since: ")
+                        .font(.headline)
+                        .foregroundStyle(.gray)
+                    Text("\(Date(timeIntervalSince1970: user.joined).formatted(date: .abbreviated, time: .omitted))")
+                        .font(.body)
+                }
             }
-            HStack {
-                Text("Member Since: ")
-                    .font(.headline)
-                    .foregroundStyle(.gray)
-                Text("\(Date(timeIntervalSince1970: user.joined).formatted(date: .abbreviated, time: .shortened))")
-                    .font(.body)
+            .padding()
+        }
+        .padding(.top, 30)
+        
+        Spacer()
+        
+        BTSettingsButton(title: "Edit Profile", destination: EditProfileView(), icon: "person.circle")
+        
+        BTSettingsButton(title: "About",  destination: AboutView(), icon: "doc.fill")
+        
+        BTSettingsButton(title: "Privacy",  destination: PrivacyView(), icon: "hand.raised.slash.fill")
+        
+        BTSettingsButton(title: "Widgets", destination: WidgetView(), icon: "rectangle.grid.2x2.fill")
+        
+        Spacer()
+        
+        Button {
+            viewModel.logout()
+        } label: {
+            ZStack{
+                
+                RoundedRectangle(cornerRadius: 10)
+                    .foregroundStyle(.white)
+                    .frame(width: 340, height: 40)
+                
+                Text("Log Out")
+                    .foregroundStyle(.pink)
+                    .font(.system(size: 15))
             }
         }
-        .padding()
-        
-        Spacer()
-        
-        BTButton(action: viewModel.logout , backgroundColor: Color.newPrimary, text: "Log Out", textColor: .white)
-        
-        Spacer()
+        .padding(.bottom, 20)
     }
 }
 
 #Preview {
     ProfileView()
 }
+
