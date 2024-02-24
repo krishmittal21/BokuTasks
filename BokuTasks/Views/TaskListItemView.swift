@@ -10,7 +10,8 @@ import SwiftUI
 struct TaskListItemView: View {
     let item: TaskItem
     @StateObject var viewModel = TaskListItemViewViewModel()
-   
+    
+        
     var body: some View {
         HStack{
             
@@ -26,7 +27,7 @@ struct TaskListItemView: View {
             
             Spacer()
             
-            Text("\(Date(timeIntervalSince1970: item.dueDate).formatted(date: .abbreviated, time: .shortened))")
+            Text(viewModel.dueDateString(item: item))
                 .font(.footnote)
         }
     }

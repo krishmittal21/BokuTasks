@@ -31,7 +31,7 @@ struct TaskListView: View {
                     Button(action: {
                         isTodoSelected = true
                     }) {
-                        Text("Todo")
+                        Text("To-Do")
                             .padding(10)
                             .foregroundColor(.black)
                             .background(
