@@ -11,15 +11,14 @@ struct TaskListItemView: View {
     let item: TaskItem
     @StateObject var viewModel = TaskListItemViewViewModel()
     
-        
+    
     var body: some View {
         HStack{
             
-            Button{
-                viewModel.toggleIsDone(item: item)
-            } label: {
-                Image(systemName: item.isDone ? "checkmark.square" : "square")
-            }
+            Image(systemName: item.isDone ? "checkmark.square" : "square")
+                .onTapGesture {
+                    viewModel.toggleCompletionStatus(item: item)
+                }
             
             Text(item.title)
                 .font(.headline)

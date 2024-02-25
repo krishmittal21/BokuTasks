@@ -30,7 +30,7 @@ class TaskListItemViewViewModel: ObservableObject {
     }
     
     
-    func toggleIsDone(item: TaskItem){
+    func toggleCompletionStatus(item: TaskItem){
         var itemCopy = item
         itemCopy.setDone(!item.isDone)
         
