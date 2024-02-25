@@ -15,7 +15,7 @@ class TaskListItemViewViewModel: ObservableObject {
     let calendar = Calendar.current
     
     func dueDateString( item: TaskItem) -> String {
-        let today = calendar.startOfDay(for: Date())
+        
         let dueDate = Date(timeIntervalSince1970: item.dueDate)
         
         if calendar.isDateInToday(dueDate) {
