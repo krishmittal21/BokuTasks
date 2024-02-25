@@ -65,7 +65,7 @@ struct TaskListView: View {
                 } label: {
                     ZStack(){
                         Circle()
-                            .foregroundStyle(Color.newPrimary)
+                            .foregroundStyle(Color.primaryColor)
                             .frame(width: 70)
                         Image(systemName: "plus")
                             .resizable()

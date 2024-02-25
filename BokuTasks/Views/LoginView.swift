@@ -53,13 +53,13 @@ struct LoginView: View {
                 
                 //To Implement
                 Text("Forgot Password? ")
-                    .foregroundStyle(Color.newPrimary)
+                    .foregroundStyle(Color.primaryColor)
             }
             .listSectionSpacing(10)
             .frame(height: 350)
             .scrollContentBackground(.hidden)
             
-            BTButton(action: viewModel.login, backgroundColor: Color.newPrimary, text: "Log In", textColor: .white)
+            BTButton(action: viewModel.login, backgroundColor: Color.primaryColor, text: "Log In", textColor: .white)
             
             VStack{
                 // To Implement Functionality
@@ -85,7 +85,7 @@ struct LoginView: View {
                 } label: {
                     Text("Sign In")
                         .underline()
-                        .foregroundStyle(Color.newPrimary)
+                        .foregroundStyle(Color.primaryColor)
                 }
             }
             .padding(10)

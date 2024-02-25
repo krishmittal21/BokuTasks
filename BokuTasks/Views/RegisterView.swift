@@ -77,19 +77,19 @@ struct RegisterView: View {
                 Text("By Signing Up, you agree to our ")
                 +
                 Text("Terms & Conditions")
-                    .foregroundStyle(Color.newPrimary)
+                    .foregroundStyle(Color.primaryColor)
                 +
                 Text(" and ")
                 +
                 Text("Privacy Policy.")
-                    .foregroundStyle(Color.newPrimary)
+                    .foregroundStyle(Color.primaryColor)
                 
             }
             .listSectionSpacing(10)
             .frame(height: 350)
             .scrollContentBackground(.hidden)
             
-            BTButton(action: viewModel.register, backgroundColor: Color.newPrimary, text: "Sign Up", textColor: .white)
+            BTButton(action: viewModel.register, backgroundColor: Color.primaryColor, text: "Sign Up", textColor: .white)
             .padding(.bottom,10)
             
             VStack{
@@ -116,7 +116,7 @@ struct RegisterView: View {
                 } label: {
                     Text("Log In")
                         .underline()
-                        .foregroundStyle(Color.newPrimary)
+                        .foregroundStyle(Color.primaryColor)
                 }
             }
             .padding(10)

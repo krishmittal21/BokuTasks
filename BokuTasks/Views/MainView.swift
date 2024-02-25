@@ -33,6 +33,6 @@ struct MainView: View {
                     Label("", systemImage: "person.circle")
                 }
         }
-        .accentColor(Color.newPrimary)
+        .accentColor(Color.primaryColor)
     }
 }

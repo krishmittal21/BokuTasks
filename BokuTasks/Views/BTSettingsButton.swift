@@ -23,7 +23,7 @@ struct BTSettingsButton<Destination: View>: View {
                 HStack{
                                         
                     Image(systemName: icon)
-                        .foregroundStyle(Color.newPrimary)
+                        .foregroundStyle(Color.primaryColor)
                                     
                     Text(title)
                         .foregroundStyle(.black)

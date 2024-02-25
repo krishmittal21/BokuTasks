@@ -27,7 +27,7 @@ struct AuthenticationView: View {
                     +
                     Text("Everyday Task ")
                             .font(.system(size: 35, weight: .medium, design: .rounded))
-                            .foregroundStyle(Color.newPrimary)
+                            .foregroundStyle(Color.primaryColor)
                     
                     Text("Management App")
                             .font(.system(size: 35, weight: .medium, design: .rounded))
@@ -35,7 +35,7 @@ struct AuthenticationView: View {
                 .padding(.bottom, 30)
                 
                 HStack{
-                    BTAuthButton(title: "SignUp", background: Color.newPrimary, textColor: Color.white, destination: RegisterView())
+                    BTAuthButton(title: "SignUp", background: Color.primaryColor, textColor: Color.white, destination: RegisterView())
                         
                     
                     Spacer()
