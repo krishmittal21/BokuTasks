@@ -9,11 +9,29 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var viewModel = MainViewViewModel()
+    @State var isHamburgerMenu = false
+    
     var body: some View {
-        if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
-            accountView
-        } else {
-            AuthenticationView()
+        NavigationView{
+            ZStack{
+                if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
+                    accountView
+                } else {
+                    AuthenticationView()
+                }
+            }
+            .navigationBarItems(leading: {
+                Button(action: {
+                    withAnimation {
+                        self.isHamburgerMenu.toggle()
+                    }
+                }) {
+                    Image(systemName: "line.horizontal.3")
+                }
+            }())
+            .sheet(isPresented: $isHamburgerMenu) {
+                ProfileView()
+            }
         }
     }
     
@@ -27,10 +45,6 @@ struct MainView: View {
             CalendarView(userId: viewModel.currentUserId)
                 .tabItem {
                     Label("", systemImage: "calendar")
-                }
-            ProfileView()
-                .tabItem {
-                    Label("", systemImage: "person.circle")
                 }
         }
         .accentColor(Color.primaryColor)
