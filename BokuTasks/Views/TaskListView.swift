@@ -14,6 +14,7 @@ struct TaskListView: View {
     @FirestoreQuery var items: [TaskItem]
     private let userId: String
     @State var isTodoSelected = true
+    @State var isHamburgerMenu = false
     
     init(userId: String){
         self.userId = userId
@@ -25,7 +26,7 @@ struct TaskListView: View {
         
         NavigationView{
             VStack(alignment: .trailing){
-        
+                
                 HStack(spacing: 100){
                     
                     Button(action: {
@@ -53,7 +54,7 @@ struct TaskListView: View {
                     }
                 }
                 .padding(.horizontal,65)
-
+                
                 if isTodoSelected {
                     tasksLeft
                 } else {
@@ -75,6 +76,19 @@ struct TaskListView: View {
                 }
             }
             .navigationTitle(Text("Hi \(viewModel.userName)!"))
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(leading: {
+                Button(action: {
+                    withAnimation {
+                        self.isHamburgerMenu.toggle()
+                    }
+                }) {
+                    Image(systemName: "line.horizontal.3")
+                }
+            }())
+            .sheet(isPresented: $isHamburgerMenu) {
+                ProfileView()
+            }
             .padding()
             .sheet(isPresented: $viewModel.showingNewItem ){
                 NewItemView(newItemPresented: $viewModel.showingNewItem)
@@ -119,7 +133,7 @@ struct TaskListView: View {
         }
     }
 }
- 
+
 
 #Preview {
     TaskListView(userId: "HCbFqqujIRZXoDFGBGvhdIpVDpM2")

@@ -9,29 +9,11 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var viewModel = MainViewViewModel()
-    @State var isHamburgerMenu = false
-    
     var body: some View {
-        NavigationView{
-            ZStack{
-                if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
-                    accountView
-                } else {
-                    AuthenticationView()
-                }
-            }
-            .navigationBarItems(leading: {
-                Button(action: {
-                    withAnimation {
-                        self.isHamburgerMenu.toggle()
-                    }
-                }) {
-                    Image(systemName: "line.horizontal.3")
-                }
-            }())
-            .sheet(isPresented: $isHamburgerMenu) {
-                ProfileView()
-            }
+        if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
+            accountView
+        } else {
+            AuthenticationView()
         }
     }
     
