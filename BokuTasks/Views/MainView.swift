@@ -28,10 +28,6 @@ struct MainView: View {
                 .tabItem {
                     Label("", systemImage: "calendar")
                 }
-            ProfileView()
-                .tabItem {
-                    Label("", systemImage: "person.circle")
-                }
         }
         .accentColor(Color.primaryColor)
     }
