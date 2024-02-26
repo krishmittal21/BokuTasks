@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC160BF32B8C5AEA007D248A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC160BF22B8C5AEA007D248A /* SplashView.swift */; };
 		CC5481992B804E45000BB7A6 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5481982B804E45000BB7A6 /* CalendarView.swift */; };
 		CC54819D2B804ED3000BB7A6 /* CalendarViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC54819C2B804ED3000BB7A6 /* CalendarViewViewModel.swift */; };
 		CC5481A12B8058CB000BB7A6 /* BTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5481A02B8058CB000BB7A6 /* BTButton.swift */; };
@@ -77,6 +78,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC160BF22B8C5AEA007D248A /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		CC5481982B804E45000BB7A6 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		CC54819C2B804ED3000BB7A6 /* CalendarViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewViewModel.swift; sourceTree = "<group>"; };
 		CC5481A02B8058CB000BB7A6 /* BTButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTButton.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				CCFCC6572B8852530007D90D /* WidgetView.swift */,
 				CCFCC65F2B8853260007D90D /* BTSettingsButton.swift */,
 				CC8763302B889CF7002F5717 /* EditProfileView.swift */,
+				CC160BF22B8C5AEA007D248A /* SplashView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				CC54819D2B804ED3000BB7A6 /* CalendarViewViewModel.swift in Sources */,
 				CC8763312B889CF7002F5717 /* EditProfileView.swift in Sources */,
 				CCFCC6542B8852280007D90D /* AboutView.swift in Sources */,
+				CC160BF32B8C5AEA007D248A /* SplashView.swift in Sources */,
 				CC8763332B889D04002F5717 /* EditProfileViewViewModel.swift in Sources */,
 				CC77CEDF2B7DC8BF007B4CB5 /* RegisterView.swift in Sources */,
 				CCFCC65A2B8852660007D90D /* AboutViewViewModel.swift in Sources */,
@@ -535,6 +539,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -563,6 +568,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
