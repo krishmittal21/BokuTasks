@@ -6,24 +6,19 @@
 //
 
 import SwiftUI
-import FirebaseFirestoreSwift
 
 struct CalendarView: View {
     @StateObject var viewModel: CalendarViewViewModel
-    @FirestoreQuery var items: [TaskItem]
-    @State private var selectedDate = Date()
-    private let userId: String
+    
     
     init(userId: String){
-        self.userId = userId
-        self._items = FirestoreQuery(collectionPath: "users/\(userId)/tasks")
         self._viewModel = StateObject(wrappedValue: CalendarViewViewModel(userId: userId))
     }
     
     var body: some View {
         VStack{
             VStack {
-                DatePicker("Select Date", selection: $selectedDate, displayedComponents: .date)
+                DatePicker("Select Date", selection: $viewModel.selectedDate, displayedComponents: .date)
                     .datePickerStyle(GraphicalDatePickerStyle())
                     .padding()
             }
@@ -35,10 +30,7 @@ struct CalendarView: View {
     
     @ViewBuilder
     var tasks: some View {
-        let filteredItems = items.filter { task in
-            let taskDate = Date(timeIntervalSince1970: task.dueDate)
-            return Calendar.current.isDate(taskDate, equalTo: selectedDate, toGranularity: .day)
-        }.sorted(by: { $0.dueDate < $1.dueDate })
+        let filteredItems = viewModel.filterTasks(forDate: viewModel.selectedDate)
         ZStack{
             List(filteredItems) { item in
                 TaskListItemView(item: item)
