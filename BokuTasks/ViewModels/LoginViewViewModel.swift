@@ -30,6 +30,12 @@ class LoginViewViewModel: ObservableObject {
                 errorMessage = "Please Fill in all Fields"
                 return false
             }
+            let emailRegex = #"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"#
+            let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
+            guard emailPredicate.evaluate(with: email) else {
+                errorMessage = "Please enter a valid email address."
+                return false
+            }
             return true
         }
     }

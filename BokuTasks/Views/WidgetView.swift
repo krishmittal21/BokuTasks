@@ -9,7 +9,7 @@ import SwiftUI
 
 struct WidgetView: View {
     var body: some View {
-        Text("Widget Abour")
+        Text("Widgets Coming Soon")
     }
 }
 
