@@ -30,40 +30,29 @@ struct ProfileView: View {
     @ViewBuilder
     func profile(user: User) -> some View {
         
-        HStack{
-            //To Implement
-            Image(systemName: "person.circle")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .foregroundStyle(.white)
-                .frame(width: 80, height: 80)
-                .padding()
+        VStack(alignment: .leading){
             
-            VStack (alignment: .leading){
-                
-                Text(user.name)
+            Text(user.name)
+                .font(.body)
+                .bold()
+            
+            Text(user.email)
+                .font(.body)
+            
+            HStack {
+                Text("Member Since: ")
+                    .font(.headline)
+                    .foregroundStyle(.gray)
+                Text("\(Date(timeIntervalSince1970: user.joined).formatted(date: .abbreviated, time: .omitted))")
                     .font(.body)
-                    .bold()
-                
-                Text(user.email)
-                    .font(.body)
-                
-                HStack {
-                    Text("Member Since: ")
-                        .font(.headline)
-                        .foregroundStyle(.gray)
-                    Text("\(Date(timeIntervalSince1970: user.joined).formatted(date: .abbreviated, time: .omitted))")
-                        .font(.body)
-                }
             }
-            .padding()
         }
         .padding(.top, 30)
         
         Spacer()
         
         BTSettingsButton(title: "Edit Profile", destination: EditProfileView(), icon: "person.circle")
-        
+                
         BTSettingsButton(title: "About",  destination: AboutView(), icon: "doc.fill")
         
         BTSettingsButton(title: "Privacy",  destination: PrivacyView(), icon: "hand.raised.slash.fill")

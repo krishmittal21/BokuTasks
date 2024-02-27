@@ -24,7 +24,10 @@ struct RegisterView: View {
                     //.padding(.top, 3)
             }
             Spacer()
-            
+            if  !viewModel.errorMessage.isEmpty{
+                Text(viewModel.errorMessage)
+                    .foregroundStyle(Color.red)
+            }
             Form {
                 Section{
                     HStack{
