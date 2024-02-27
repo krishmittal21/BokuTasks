@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct AuthenticationView: View {
+    
+    @StateObject var viewModel = AuthenticationViewViewModel()
     var body: some View {
         NavigationView{
             VStack(){
@@ -15,28 +17,44 @@ struct AuthenticationView: View {
                 Image("logo-transparent")
                     .resizable()
                     .frame(width: 450, height: 450)
-                /* To Change The Logo
-                Text("Boku Tasks")
-                    .font(.system(size: 40, weight: .medium, design: .rounded))
-                    .foregroundStyle(Color.newPrimary)
-                    .padding(.bottom, 20)
-                */
+                
                 VStack{
                     Text("Your ")
-                            .font(.system(size: 35, weight: .medium, design: .rounded))
+                        .font(.system(size: 35, weight: .medium, design: .rounded))
                     +
                     Text("Everyday Task ")
-                            .font(.system(size: 35, weight: .medium, design: .rounded))
-                            .foregroundStyle(Color.primaryColor)
+                        .font(.system(size: 35, weight: .medium, design: .rounded))
+                        .foregroundStyle(Color.primaryColor)
                     
                     Text("Management App")
-                            .font(.system(size: 35, weight: .medium, design: .rounded))
+                        .font(.system(size: 35, weight: .medium, design: .rounded))
                 }
                 .padding(.bottom, 30)
                 
-                HStack{
+                
+                
+                VStack{
+                    
+                    Button {
+                        Task {
+                            await viewModel.signInWithGoogle()
+                        }
+                    } label: {
+                        Text("Sign in with Google")
+                            .foregroundStyle(.black)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 8)
+                            .background(alignment: .leading) {
+                                Image("google")
+                                    .resizable()
+                                    .frame(width: 30,height: 30, alignment: .center)
+                            }
+                    }
+                    .buttonStyle(.bordered)
+                    
+                    Spacer()
+                    
                     BTAuthButton(title: "SignUp", background: Color.primaryColor, textColor: Color.white, destination: RegisterView())
-                        
                     
                     Spacer()
                     
