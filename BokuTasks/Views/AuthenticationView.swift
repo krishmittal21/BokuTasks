@@ -6,8 +6,14 @@
 //
 
 import SwiftUI
+import AuthenticationServices
+import CryptoKit
+import GoogleSignIn
+import GoogleSignInSwift
 
 struct AuthenticationView: View {
+    
+    @StateObject var viewModel = AuthenticationViewViewModel()
     var body: some View {
         NavigationView{
             VStack(){
@@ -15,32 +21,90 @@ struct AuthenticationView: View {
                 Image("logo-transparent")
                     .resizable()
                     .frame(width: 450, height: 450)
-                /* To Change The Logo
-                Text("Boku Tasks")
-                    .font(.system(size: 40, weight: .medium, design: .rounded))
-                    .foregroundStyle(Color.newPrimary)
-                    .padding(.bottom, 20)
-                */
+                
                 VStack{
                     Text("Your ")
-                            .font(.system(size: 35, weight: .medium, design: .rounded))
+                        .font(.system(size: 35, weight: .medium, design: .rounded))
                     +
                     Text("Everyday Task ")
-                            .font(.system(size: 35, weight: .medium, design: .rounded))
-                            .foregroundStyle(Color.primaryColor)
+                        .font(.system(size: 35, weight: .medium, design: .rounded))
+                        .foregroundStyle(Color.primaryColor)
                     
                     Text("Management App")
-                            .font(.system(size: 35, weight: .medium, design: .rounded))
+                        .font(.system(size: 35, weight: .medium, design: .rounded))
                 }
-                .padding(.bottom, 30)
+                .padding(.bottom, 10)
                 
-                HStack{
-                    BTAuthButton(title: "SignUp", background: Color.primaryColor, textColor: Color.white, destination: RegisterView())
+                
+                
+                VStack{
+                    
+                    Button {
+                        Task {
+                            await viewModel.signInWithGoogle()
+                        }
+                    } label: {
+                        HStack{
+                            Image("google")
+                                .resizable()
+                                .frame(width: 20,height: 20)
+                            Text("Sign in with Google")
+                                .foregroundStyle(.black)
+                            
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 8)
                         
+                    }
+                    .buttonStyle(.bordered)
                     
                     Spacer()
                     
-                    BTAuthButton(title: "LogIn", background: Color.white, textColor: Color.black, destination: LoginView())
+                    //ToDo
+                    /*
+                    SignInWithAppleButton { request in
+                        
+                    } onCompletion: { result in
+                        
+                    }
+                    .signInWithAppleButtonStyle(.white)
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: 50)
+                    .cornerRadius(8)
+                    
+                    Spacer()
+                    */
+                    
+                    NavigationLink(destination: RegisterView()) {
+                        HStack{
+                            Image(systemName: "envelope.fill")
+                                .resizable()
+                                .frame(width: 25,height: 20)
+                                .foregroundStyle(Color.primaryColor)
+                            Text("Sign in with Email")
+                                .foregroundStyle(.black)
+                            
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 8)
+                    }
+                    .buttonStyle(.bordered)
+                    .navigationTitle("")
+                    .navigationBarBackButtonHidden(true)
+                    
+                    Spacer()
+                    
+                    HStack{
+                        Text("Already have an account?")
+                            .foregroundStyle(Color.gray)
+                        NavigationLink{
+                            LoginView()
+                        } label: {
+                            Text("Log In")
+                                .underline()
+                                .foregroundStyle(Color.primaryColor)
+                        }
+                    }
+                    .padding(10)
                 }
                 .padding(40)
             }

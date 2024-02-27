@@ -92,22 +92,6 @@ struct RegisterView: View {
             BTButton(action: viewModel.register, backgroundColor: Color.primaryColor, text: "Sign Up", textColor: .white)
             .padding(.bottom,10)
             
-            VStack{
-                // To Implement Functionality
-                Text("or sign up with")
-                    .foregroundStyle(Color.gray)
-                HStack(spacing: 30){
-                    Image("apple")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                    Image("meta")
-                        .resizable()
-                        .frame(width: 50, height: 35)
-                    Image("google")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                }
-            }
             HStack{
                 Text("Already have an account?")
                     .foregroundStyle(Color.gray)

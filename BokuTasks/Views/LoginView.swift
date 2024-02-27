@@ -61,22 +61,7 @@ struct LoginView: View {
             
             BTButton(action: viewModel.login, backgroundColor: Color.primaryColor, text: "Log In", textColor: .white)
             
-            VStack{
-                // To Implement Functionality
-                Text("or log in with")
-                    .foregroundStyle(Color.gray)
-                HStack(spacing: 30){
-                    Image("apple")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                    Image("meta")
-                        .resizable()
-                        .frame(width: 50, height: 35)
-                    Image("google")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                }
-            }
+            
             HStack{
                 Text("Don't have an account?")
                     .foregroundStyle(Color.gray)
