@@ -76,22 +76,38 @@ struct RegisterView: View {
                             .stroke(Color.gray, lineWidth: 1)
                     )
                 }
-                //To Implement
-                Text("By Signing Up, you agree to our ")
-                +
-                Text("Terms & Conditions")
-                    .foregroundStyle(Color.primaryColor)
-                +
-                Text(" and ")
-                +
-                Text("Privacy Policy.")
-                    .foregroundStyle(Color.primaryColor)
+                Section{
+                    HStack{
+                        Image(systemName: "lock")
+                            .foregroundColor(.gray)
+                            .padding(.leading, 8)
+                        SecureField("Confirm Password", text: $viewModel.confirmPassword)
+                            .textFieldStyle(DefaultTextFieldStyle())
+                            .autocorrectionDisabled()
+                            .frame(height: 50)
+                    }
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 5)
+                            .stroke(Color.gray, lineWidth: 1)
+                    )
+                }
+                
                 
             }
             .listSectionSpacing(10)
             .frame(height: 350)
             .scrollContentBackground(.hidden)
             
+            //To Implement
+            Text("By Signing Up, you agree to our ")
+            +
+            Text("Terms & Conditions")
+                .foregroundStyle(Color.primaryColor)
+            +
+            Text(" and ")
+            +
+            Text("Privacy Policy.")
+                .foregroundStyle(Color.primaryColor)
             BTButton(action: viewModel.register, backgroundColor: Color.primaryColor, text: "Sign Up", textColor: .white)
             .padding(.bottom,10)
             
