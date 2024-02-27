@@ -97,6 +97,7 @@ struct RegisterView: View {
             .listSectionSpacing(10)
             .frame(height: 350)
             .scrollContentBackground(.hidden)
+            .padding(.bottom,10)
             
             //To Implement
             Text("By Signing Up, you agree to our ")
