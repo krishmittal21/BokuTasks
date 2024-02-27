@@ -79,7 +79,7 @@ struct AuthenticationView: View {
                             Image(systemName: "envelope.fill")
                                 .resizable()
                                 .frame(width: 25,height: 20)
-                                .foregroundStyle(.blue)
+                                .foregroundStyle(Color.primaryColor)
                             Text("Sign in with Email")
                                 .foregroundStyle(.black)
                             
