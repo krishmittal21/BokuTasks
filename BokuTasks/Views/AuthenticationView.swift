@@ -6,6 +6,10 @@
 //
 
 import SwiftUI
+import AuthenticationServices
+import CryptoKit
+import GoogleSignIn
+import GoogleSignInSwift
 
 struct AuthenticationView: View {
     
@@ -29,7 +33,7 @@ struct AuthenticationView: View {
                     Text("Management App")
                         .font(.system(size: 35, weight: .medium, design: .rounded))
                 }
-                .padding(.bottom, 30)
+                .padding(.bottom, 10)
                 
                 
                 
@@ -40,25 +44,67 @@ struct AuthenticationView: View {
                             await viewModel.signInWithGoogle()
                         }
                     } label: {
-                        Text("Sign in with Google")
-                            .foregroundStyle(.black)
-                            .frame(maxWidth: .infinity)
-                            .padding(.vertical, 8)
-                            .background(alignment: .leading) {
-                                Image("google")
-                                    .resizable()
-                                    .frame(width: 30,height: 30, alignment: .center)
-                            }
+                        HStack{
+                            Image("google")
+                                .resizable()
+                                .frame(width: 20,height: 20)
+                            Text("Sign in with Google")
+                                .foregroundStyle(.black)
+                            
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 8)
+                        
                     }
                     .buttonStyle(.bordered)
                     
                     Spacer()
                     
-                    BTAuthButton(title: "SignUp", background: Color.primaryColor, textColor: Color.white, destination: RegisterView())
+                    //ToDo
+                    /*
+                    SignInWithAppleButton { request in
+                        
+                    } onCompletion: { result in
+                        
+                    }
+                    .signInWithAppleButtonStyle(.white)
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: 50)
+                    .cornerRadius(8)
+                    
+                    Spacer()
+                    */
+                    
+                    NavigationLink(destination: RegisterView()) {
+                        HStack{
+                            Image(systemName: "envelope.fill")
+                                .resizable()
+                                .frame(width: 25,height: 20)
+                                .foregroundStyle(.blue)
+                            Text("Sign in with Email")
+                                .foregroundStyle(.black)
+                            
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 8)
+                    }
+                    .buttonStyle(.bordered)
+                    .navigationTitle("")
+                    .navigationBarBackButtonHidden(true)
                     
                     Spacer()
                     
-                    BTAuthButton(title: "LogIn", background: Color.white, textColor: Color.black, destination: LoginView())
+                    HStack{
+                        Text("Already have an account?")
+                            .foregroundStyle(Color.gray)
+                        NavigationLink{
+                            LoginView()
+                        } label: {
+                            Text("Log In")
+                                .underline()
+                                .foregroundStyle(Color.primaryColor)
+                        }
+                    }
+                    .padding(10)
                 }
                 .padding(40)
             }

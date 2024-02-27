@@ -8,15 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		CC160BF32B8C5AEA007D248A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC160BF22B8C5AEA007D248A /* SplashView.swift */; };
-		CC414F042B8D9E8F0058639B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC414F032B8D9E8F0058639B /* GoogleService-Info.plist */; };
 		CC414F072B8DA06C0058639B /* AuthenticationViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC414F062B8DA06C0058639B /* AuthenticationViewViewModel.swift */; };
 		CC414F0A2B8DA22B0058639B /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = CC414F092B8DA22B0058639B /* GoogleSignIn */; };
 		CC414F0C2B8DA22B0058639B /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CC414F0B2B8DA22B0058639B /* GoogleSignInSwift */; };
+		CC414F0E2B8DB64A0058639B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC414F0D2B8DB64A0058639B /* GoogleService-Info.plist */; };
 		CC5481992B804E45000BB7A6 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5481982B804E45000BB7A6 /* CalendarView.swift */; };
 		CC54819D2B804ED3000BB7A6 /* CalendarViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC54819C2B804ED3000BB7A6 /* CalendarViewViewModel.swift */; };
 		CC5481A12B8058CB000BB7A6 /* BTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5481A02B8058CB000BB7A6 /* BTButton.swift */; };
 		CC744C6C2B7F00C300C3D1C8 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC744C6B2B7F00C300C3D1C8 /* AuthenticationView.swift */; };
-		CC744C6E2B7F013300C3D1C8 /* BTAuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC744C6D2B7F013300C3D1C8 /* BTAuthButton.swift */; };
 		CC744C702B7F0C0500C3D1C8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC744C6F2B7F0C0500C3D1C8 /* Extensions.swift */; };
 		CC744C722B7F227D00C3D1C8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CC744C712B7F227D00C3D1C8 /* FirebaseAnalytics */; };
 		CC744C742B7F227D00C3D1C8 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = CC744C732B7F227D00C3D1C8 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -82,14 +81,13 @@
 
 /* Begin PBXFileReference section */
 		CC160BF22B8C5AEA007D248A /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
-		CC414F032B8D9E8F0058639B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CC414F052B8D9EBB0058639B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CC414F062B8DA06C0058639B /* AuthenticationViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewViewModel.swift; sourceTree = "<group>"; };
+		CC414F0D2B8DB64A0058639B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CC5481982B804E45000BB7A6 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		CC54819C2B804ED3000BB7A6 /* CalendarViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewViewModel.swift; sourceTree = "<group>"; };
 		CC5481A02B8058CB000BB7A6 /* BTButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTButton.swift; sourceTree = "<group>"; };
 		CC744C6B2B7F00C300C3D1C8 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
-		CC744C6D2B7F013300C3D1C8 /* BTAuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTAuthButton.swift; sourceTree = "<group>"; };
 		CC744C6F2B7F0C0500C3D1C8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CC77CEC32B7DBC93007B4CB5 /* BokuTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BokuTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC77CEC62B7DBC93007B4CB5 /* BokuTasksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BokuTasksApp.swift; sourceTree = "<group>"; };
@@ -224,7 +222,6 @@
 				CC77CEE42B7DC930007B4CB5 /* TaskListView.swift */,
 				CC77CEE82B7DC95F007B4CB5 /* TaskListItemView.swift */,
 				CC744C6B2B7F00C300C3D1C8 /* AuthenticationView.swift */,
-				CC744C6D2B7F013300C3D1C8 /* BTAuthButton.swift */,
 				CC5481982B804E45000BB7A6 /* CalendarView.swift */,
 				CC5481A02B8058CB000BB7A6 /* BTButton.swift */,
 				CCFCC6532B8852280007D90D /* AboutView.swift */,
@@ -260,7 +257,7 @@
 		CC77CED72B7DC847007B4CB5 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				CC414F032B8D9E8F0058639B /* GoogleService-Info.plist */,
+				CC414F0D2B8DB64A0058639B /* GoogleService-Info.plist */,
 				CC77CEC62B7DBC93007B4CB5 /* BokuTasksApp.swift */,
 				CC77CECA2B7DBC95007B4CB5 /* Assets.xcassets */,
 				CC744C6F2B7F0C0500C3D1C8 /* Extensions.swift */,
@@ -368,7 +365,7 @@
 			files = (
 				CC77CECE2B7DBC95007B4CB5 /* Preview Assets.xcassets in Resources */,
 				CC77CECB2B7DBC95007B4CB5 /* Assets.xcassets in Resources */,
-				CC414F042B8D9E8F0058639B /* GoogleService-Info.plist in Resources */,
+				CC414F0E2B8DB64A0058639B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +380,6 @@
 				CCFCC65E2B88527D0007D90D /* WidgetViewViewModel.swift in Sources */,
 				CC77CEC92B7DBC93007B4CB5 /* MainView.swift in Sources */,
 				CC77CEF12B7DC9AE007B4CB5 /* ProfileViewViewModel.swift in Sources */,
-				CC744C6E2B7F013300C3D1C8 /* BTAuthButton.swift in Sources */,
 				CCFCC6562B8852420007D90D /* PrivacyView.swift in Sources */,
 				CCFCC6602B8853260007D90D /* BTSettingsButton.swift in Sources */,
 				CC77CEE52B7DC930007B4CB5 /* TaskListView.swift in Sources */,
