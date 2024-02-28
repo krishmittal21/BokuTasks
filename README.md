@@ -22,35 +22,21 @@
 
 ## Screenshots
 
-### Splash Screen
-![Splash Screen](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/SplashScreen.png)
+| Splash Screen | Auth View | Sign Up |
+|:-------------:|:---------:|:-------:|
+| ![Splash Screen](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/SplashScreen.png) | ![Auth View](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/AuthView.png) | ![Sign Up](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/SignUp.png) |
 
-### Auth View
-![Auth View](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/AuthView.png)
+| Log In | Google Auth | Tasks View |
+|:------:|:-----------:|:----------:|
+| ![Log In](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/LogIn.png) | ![Google Auth](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/GoogleAuth.png) | ![Tasks View](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/TasksView.png) |
 
-### Sign Up
-![Sign Up](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/SignUp.png)
+| New Task | Done Tasks View | Delete Tasks |
+|:--------:|:---------------:|:------------:|
+| ![New Task](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/NewTask.png) | ![Done Tasks View](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/DoneTasksView.png) | ![Delete Tasks](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/DeleteTasks.png) |
 
-### Log In
-![Log In](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/LogIn.png)
-
-### Google Auth
-![Google Auth](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/GoogleAuth.png)
-
-### Tasks View
-![Tasks View](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/TasksView.png)
-
-### New Task
-![New Task](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/NewTask.png)
-
-### Done Tasks View
-![Done Tasks View](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/DoneTasksView.png)
-
-### Delete Tasks
-![Delete Tasks](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/DeleteTasks.png)
-
-### Calendar View
-![Calendar View](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/CalendarView.png)
+| Calendar View | Profile View |
+|:-------------:|:------------:|
+| ![Calendar View](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/CalendarView.png) | ![Profile View](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/ProfileView.png) |
 
 ### Profile View
 ![Profile View](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/ProfileView.png)
