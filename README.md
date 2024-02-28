@@ -3,9 +3,10 @@
 
 "Boku Tasks" is a task management iOS application developed by Krish Mittal using Swift 5 and SwiftUI, with Firebase Authentication (Auth) and Firebase Storage integration. The app provides users with a seamless experience for organizing their tasks efficiently, including features such as task status organization as "To-Do" or "Done", and a calendar view for easy task visualization.
 
-|:-------------:|:---------:|
-| ![Swift5](https://developer.apple.com/assets/elements/icons/swift/swift-96x96_2x.png) | ![SwiftUI](https://developer.apple.com/assets/elements/icons/swiftui/swiftui-96x96_2x.png) | 
-
+<p align="center">
+    <img src="https://developer.apple.com/assets/elements/icons/swift/swift-96x96_2x.png" alt="Swift5" width="48" height="48">
+    <img src="https://developer.apple.com/assets/elements/icons/swiftui/swiftui-96x96_2x.png" alt="SwiftUI" width="48" height="48">
+</p>
 
 ## Features
 
