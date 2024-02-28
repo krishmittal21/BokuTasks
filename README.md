@@ -37,8 +37,3 @@
 | Calendar View | Profile View |
 |:-------------:|:------------:|
 | ![Calendar View](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/CalendarView.png) | ![Profile View](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/ProfileView.png) |
-
-### Profile View
-![Profile View](https://github.com/krishmittal21/BokuTasks/raw/main/ScreenShots/ProfileView.png)
-
-
